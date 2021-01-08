@@ -1,0 +1,26 @@
+body{
+    background-color: black;
+    margin: 0; 
+    color: white;
+}
+
+.container{
+    max-width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.fontheader{
+    color:#BE9442; 
+    text-align: center;
+}
+
+.hero{
+    background-image: url('../img/homebackground.jpg');
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
