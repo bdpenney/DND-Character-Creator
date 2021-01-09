@@ -24,3 +24,21 @@ body{
     justify-content: center;
     align-items: center;
 }
+
+img {
+    display: block;
+}
+
+.menuborder {
+    position: relative;
+    display: inline-block;
+}
+
+.menuoption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50% );
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
