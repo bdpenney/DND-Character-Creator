@@ -8,6 +8,7 @@ body{
     max-width: 960px;
     margin-right: auto;
     margin-left: auto;
+    padding-bottom: 20px;
 }
 
 .fontheader{
@@ -30,7 +31,7 @@ body{
 }
 
 div#buttonForm input {
-    background: url("../img/menubutton.png") no-repeat scroll 0 0 transparent;
+    background: url("../img/menuicon.png") no-repeat scroll 0 0 transparent;
     cursor: pointer;
     width: 125px;
     height: 100px;
@@ -38,6 +39,7 @@ div#buttonForm input {
     border: none;
     color:white;
     text-align: center;
+    font-weight: bold;
   }
 
   .infoicon{
@@ -61,6 +63,7 @@ div#buttonForm input {
   .description{
       font-size: 20px;
       text-align: center;
+      line-height: normal;
   }
 
   div#rogue input{
@@ -76,7 +79,18 @@ div#buttonForm input {
     background: url('../img/fighter.png') no-repeat scroll 0 0 transparent; 
     cursor: pointer;
     width: 150px;
-    height: 220px;
+    height: 230px;
     padding-bottom: 2px;
     border: none;
   }
+
+  div#wizard input{
+    background: url('../img/wizard.png') no-repeat scroll 0 0 transparent; 
+    cursor: pointer;
+    width: 170px;
+    height: 230px;
+    padding-bottom: 2px;
+    border: none;
+  }
+
+  
