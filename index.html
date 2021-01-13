@@ -3,6 +3,8 @@
     <head>
         <title>Dungeons and Dragons Character Creator</title>
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap" rel="stylesheet">
     </head>
     <body>
         <section id="hero" class="hero">
@@ -39,8 +41,13 @@
                     <input type="Character Sheet" name="Character Sheet" value="Character Sheet">
                 </div>
             </div>
-            <div>
-                <h2 class="fontheader flex header2">CLASS <sup><img src="img/infoicon.png" width ="50%" class="infoicon"></sup></h2>
+            <div class="flexvertical">
+                <div class="sectioninfowrapper">
+                    <h2 class="fontheader flex header2">CLASS</h2>
+                    <div class="infoiconwrapper">
+                        <img src="img/infoicon.png">
+                    </div>
+                </div>
                 <p class="description">Your character's class is the fighting style 
                     and makes up <br> the basic foundation of your skills.</p>
             </div>
@@ -61,7 +68,7 @@
                 </div>
                 <div class="flex">
                     <div>
-                        <h3>FIGHTER</h3>
+                        <h3 class="header3">FIGHTER</h3>
                         <img src="img/banner.png" width="50%">
                         <p>Primary Ability</p>
                         <p>Strength</p>
