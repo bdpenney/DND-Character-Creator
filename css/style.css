@@ -56,7 +56,7 @@ div#buttonForm input {
   .infoiconwrapper{
       position: absolute;
       top: 0px;
-      left: 100px;
+      right: 0px;
   }
 
   .logo{
