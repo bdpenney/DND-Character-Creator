@@ -5,6 +5,10 @@
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Roboto:wght@100;300;700&display=swap" rel="stylesheet">
     </head>
     <body>
         <section id="hero" class="hero">
@@ -17,7 +21,7 @@
                 <p class="description">The Dungeons and Dragons Character Creator will 
                     help <br> you create a starter character whether you are new to the <br>
                     game or a veteran on the adventure lifestyle!</p>
-                <div id="buttonForm" class="flex">
+                <div class="buttonForm flex">
                     <input type="Venture Forward" name="Venture Forward" value="Venture Forward">
                 </div>
             </div>
@@ -25,28 +29,26 @@
 
         <section id="class">
             <div class="flex">
-                <div id="buttonForm">
+                <div class="buttonForm">
                     <input type="Home" name="Home" value="Home">
                 </div>
-                <div id="buttonForm">
+                <div class="buttonForm">
                     <input type="Class" name="Class" value="Class">
                 </div>
-                <div id="buttonForm">
+                <div class="buttonForm">
                     <input type="Race" name="Race" value="Race">
                 </div>
-                <div id="buttonForm">
+                <div class="buttonForm">
                     <input type="Ability Scores" name="Ability Scores" value="Ability Scores">
                 </div>
-                <div id="buttonForm">
+                <div class="buttonForm">
                     <input type="Character Sheet" name="Character Sheet" value="Character Sheet">
                 </div>
             </div>
             <div class="flexvertical">
                 <div class="sectioninfowrapper">
                     <h2 class="fontheader flex header2">CLASS</h2>
-                    <div class="infoiconwrapper">
-                        <img src="img/infoicon.png">
-                    </div>
+                    <img src="img/infoicon.png" class="infoiconwrapper">
                 </div>
                 <p class="description">Your character's class is the fighting style 
                     and makes up <br> the basic foundation of your skills.</p>
@@ -54,26 +56,44 @@
             <div class="container flex">
                 <div class="flex">
                     <div>
-                        <h3>ROGUE</h3>
+                        <div class="sectioninfowrapper">
+                            <h3 class="header3">ROGUE</h3>
+                            <img src="img/infoiconsm.png" class="infoiconwrapper2">
+                        </div>
                         <img src="img/banner.png" width="50%">
-                        <p>Primary Ability</p>
+                        <div class="sectioninfowrapper">
+                            <p>Primary Ability</p>
+                            <img src="img/infoiconsm.png" class="infoiconwrapper1">
+                        </div>
                         <p>Dexterity</p>
                         <br>
-                        <p>Saving Throws</p>
+                        <div class="sectioninfowrapper">
+                            <p>Saving Throws</p>
+                            <img src="img/infoiconsm.png" class="infoiconwrapper1">
+                        </div>
                         <p>Dexterity & Intelligence</p>
                     </div>
                     <div id="rogue">
-                        <input type="Rogue" name="Rogue" value="Rogue" width="50%">
+                        <input type="Rogue" name="Rogue" value="Rogue">
                     </div>
                 </div>
                 <div class="flex">
                     <div>
-                        <h3 class="header3">FIGHTER</h3>
+                        <div class="sectioninfowrapper">
+                            <h3 class="header3">FIGHTER</h3>
+                            <img src="img/infoiconsm.png" class="infoiconwrapper1">
+                        </div>
                         <img src="img/banner.png" width="50%">
-                        <p>Primary Ability</p>
+                        <div class="sectioninfowrapper">
+                            <p>Primary Ability</p>
+                            <img src="img/infoiconsm.png" class="infoiconwrapper1">
+                        </div>
                         <p>Strength</p>
                         <br>
-                        <p>Saving Throws</p>
+                        <div class="sectioninfowrapper">
+                            <p>Saving Throws</p>
+                            <img src="img/infoiconsm.png" class="infoiconwrapper1">
+                        </div>
                         <p>Strength & Constitution</p>
                     </div>
                     <div id="fighter">
@@ -82,12 +102,21 @@
                 </div>
                 <div class="flex">
                     <div>
-                        <h3>WIZARD</h3>
+                        <div class="sectioninfowrapper">
+                            <h3 class="header3">WIZARD</h3>
+                            <img src="img/infoiconsm.png" class="infoiconwrapper1">
+                        </div>
                         <img src="img/banner.png" width="50%">
-                        <p>Primary Ability</p>
+                        <div class="sectioninfowrapper">
+                            <p>Primary Ability</p>
+                            <img src="img/infoiconsm.png" class="infoiconwrapper1">
+                        </div>
                         <p>Intelligence</p>
                         <br>
-                        <p>Saving Throws</p>
+                        <div class="sectioninfowrapper">
+                            <p>Saving Throws</p>
+                            <img src="img/infoiconsm.png" class="infoiconwrapper1">
+                        </div>
                         <p>Intelligence & Wisdom</p>
                     </div>
                     <div id="wizard">
@@ -95,7 +124,7 @@
                     </div>
                 </div>
             </div>
-            <div class="flex" id="buttonForm">
+            <div class="flex buttonForm">
                 <input type="Back" name="Back" value="Back">
                 <input type="Continue" name="Continue" value="Continue">
             </div>

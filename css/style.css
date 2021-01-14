@@ -37,7 +37,7 @@ body{
     flex-direction: column;
 }
 
-div#buttonForm input {
+.buttonForm input {
     background: url("../img/menuicon.png") no-repeat scroll 0 0 transparent;
     cursor: pointer;
     width: 125px;
@@ -56,9 +56,21 @@ div#buttonForm input {
   .infoiconwrapper{
       position: absolute;
       top: 0px;
-      right: 0px;
+      right: -25px;
   }
 
+  .infoiconwrapper1{
+    position: absolute;
+    top: -8px;
+    right: 30px;
+  }
+
+  .infoiconwrapper2{
+    position: absolute;
+    top: -8px;
+    right: 30px;
+  }
+    
   .logo{
       display: flex;
       align-items:flex-start;
@@ -74,8 +86,7 @@ div#buttonForm input {
   }
 
   .header3{
-    margin-block-start: 0px;
-    margin-block-end: 0px;
+      text-align: center;
   }
 
   .description{
@@ -93,11 +104,11 @@ div#buttonForm input {
     border: none;
   }
 
-  div#fighter input{
+   #fighter input{
     background: url('../img/fighter.png') no-repeat scroll 0 0 transparent; 
     cursor: pointer;
     width: 150px;
-    height: 230px;
+    height: 220px;
     padding-bottom: 2px;
     border: none;
   }
@@ -105,10 +116,13 @@ div#buttonForm input {
   div#wizard input{
     background: url('../img/wizard.png') no-repeat scroll 0 0 transparent; 
     cursor: pointer;
-    width: 170px;
-    height: 230px;
+    width: 150px;
+    height: 240px;
     padding-bottom: 2px;
     border: none;
   }
 
+  p {
+      text-align: center;
+  }
   
