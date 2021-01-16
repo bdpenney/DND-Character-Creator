@@ -11,6 +11,10 @@ body{
     padding-bottom: 20px;
 }
 
+.hero{
+    height: 90vh;
+}
+
 .fontheader{
     color:#BE9442; 
     text-align: center;
@@ -18,9 +22,9 @@ body{
 }
 
 .hero{
-    background-image: url('../img/homebackground1.jpg');
+    background-image: url('../img/homepage1.png');
     background-position: center;
-    background-size: cover;
+    background-size:cover; 
     background-repeat: no-repeat;
 }
 
@@ -79,6 +83,8 @@ body{
 
   .header1{
       font-size: 40px;
+      font-family: 'Crimson Text', serif;
+      line-height: normal;
   }
 
   .header2{
@@ -89,14 +95,8 @@ body{
       text-align: center;
   }
 
-  .description{
-      font-size: 20px;
-      text-align: center;
-      line-height: normal;
-  }
-
-  div#rogue input{
-    background: url('../img/rogue\ copy.png') no-repeat scroll 0 0 transparent; 
+  #rogue input{
+    background: url('../img/rogue\ copy.png');
     cursor: pointer;
     width: 150px;
     height: 220px;
@@ -124,5 +124,12 @@ body{
 
   p {
       text-align: center;
+      font-size: 20px;
+      line-height: normal;
+  }
+
+  a{
+      color:white;
+      text-decoration: none;
   }
   
