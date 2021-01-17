@@ -40,8 +40,13 @@ body{
     flex-direction: column;
 }
 
+.flexbetween{
+    display:flex;
+    justify-content: space-between;
+}
+
 .buttonForm input {
-    background: url("../img/menuicon.png") no-repeat scroll 0 0 transparent;
+    background: url("../img/menubutton.png") no-repeat scroll 0 0 transparent;
     background: contain;
     cursor: pointer;
     width: 125px;
@@ -66,13 +71,13 @@ body{
   .infoiconwrapper1{
     position: absolute;
     top: -8px;
-    right: -20px;
+    right: -5px;
   }
 
   .infoiconwrapper2{
     position: absolute;
     top: -8px;
-    right: -10px;
+    right: 10px;
   }
     
   .logo{
@@ -103,7 +108,7 @@ body{
 
   div input{
     cursor: pointer;
-    width: 150px;
+    width: 145px;
     height: 250px;
     padding-bottom: 2px;
     border: none;
@@ -113,7 +118,7 @@ body{
 
   #rogue input{
     background: url('../img/rogue.png');
-    padding-right: 20px;
+    padding-right: 16px;
    
   }
 
@@ -127,20 +132,21 @@ body{
 
   #elf input{
     background: url('../img/elf.png');
-    padding-right: 20px;
    
   }
 
    #dwarf input{
     background: url('../img/dwarf.png') no-repeat scroll 0 0 transparent; 
+    padding-right: 20px;
   }
 
   #gnome input{
     background: url('../img/gnome.png') no-repeat scroll 0 0 transparent; 
+    padding-right: 20px;
   }
   
   .classselection{
-    padding-right: 30px;
+    padding-right: 16px;
   }
 
   .classinfo{
@@ -150,7 +156,7 @@ body{
   p {
       text-align: center;
       font-size: 20px;
-      line-height: normal;
+      line-height: 30px;
   }
 
   a{
