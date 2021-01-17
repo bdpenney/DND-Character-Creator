@@ -11,14 +11,12 @@ body{
     padding-bottom: 20px;
 }
 
-.hero{
-    height: 90vh;
-}
 
 .fontheader{
     color:#BE9442; 
     text-align: center;
     font-weight: bold;
+    margin: 0;
 }
 
 .hero{
@@ -26,6 +24,7 @@ body{
     background-position: center;
     background-size:cover; 
     background-repeat: no-repeat;
+    height: 90vh;
 }
 
 .flex{
@@ -43,6 +42,7 @@ body{
 
 .buttonForm input {
     background: url("../img/menuicon.png") no-repeat scroll 0 0 transparent;
+    background: contain;
     cursor: pointer;
     width: 125px;
     height: 100px;
@@ -60,66 +60,91 @@ body{
   .infoiconwrapper{
       position: absolute;
       top: 0px;
-      right: -25px;
+      right: -30px;
   }
 
   .infoiconwrapper1{
     position: absolute;
     top: -8px;
-    right: 30px;
+    right: -20px;
   }
 
   .infoiconwrapper2{
     position: absolute;
     top: -8px;
-    right: 30px;
+    right: -10px;
   }
     
   .logo{
       display: flex;
       align-items:flex-start;
       justify-content: flex-start;
+      padding-top: 20px;
   }
 
   .header1{
-      font-size: 40px;
+      font-size: 50px;
       font-family: 'Crimson Text', serif;
-      line-height: normal;
+      line-height: 80px;
+      padding-top: 30px;
   }
 
   .header2{
-      font-size: 30px;
+      font-size: 45px;
+      font-family: 'Crimson Text', serif;
+      margin: 0;
   }
 
   .header3{
       text-align: center;
+      font-size: 28px;
+      margin-bottom: 0;
+  }
+
+  div input{
+    cursor: pointer;
+    width: 150px;
+    height: 250px;
+    padding-bottom: 2px;
+    border: none;
+    font-size: 12px;
+    color: transparent;
   }
 
   #rogue input{
-    background: url('../img/rogue\ copy.png');
-    cursor: pointer;
-    width: 150px;
-    height: 220px;
-    padding-bottom: 2px;
-    border: none;
+    background: url('../img/rogue.png');
+    padding-right: 20px;
+   
   }
 
    #fighter input{
     background: url('../img/fighter.png') no-repeat scroll 0 0 transparent; 
-    cursor: pointer;
-    width: 150px;
-    height: 220px;
-    padding-bottom: 2px;
-    border: none;
   }
 
-  div#wizard input{
+  #wizard input{
     background: url('../img/wizard.png') no-repeat scroll 0 0 transparent; 
-    cursor: pointer;
-    width: 150px;
-    height: 240px;
-    padding-bottom: 2px;
-    border: none;
+  }
+
+  #elf input{
+    background: url('../img/elf.png');
+    padding-right: 20px;
+   
+  }
+
+   #dwarf input{
+    background: url('../img/dwarf.png') no-repeat scroll 0 0 transparent; 
+  }
+
+  #gnome input{
+    background: url('../img/gnome.png') no-repeat scroll 0 0 transparent; 
+  }
+  
+  .classselection{
+    padding-right: 30px;
+  }
+
+  .classinfo{
+      font-size: 15px;
   }
 
   p {
