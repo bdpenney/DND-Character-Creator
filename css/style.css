@@ -1,3 +1,5 @@
+/* Common Styling */
+
 body{
     background-color: black;
     margin: 0; 
@@ -11,13 +13,38 @@ body{
     padding-bottom: 20px;
 }
 
-
 .fontheader{
     color:#BE9442; 
     text-align: center;
     font-weight: bold;
     margin: 0;
 }
+
+p {
+  text-align: center;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+a{
+  color:white;
+  text-decoration: none;
+}
+
+.flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexvertical{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Hero Section */
 
 .hero{
     background-image: url('../img/homepage1.png');
@@ -27,20 +54,17 @@ body{
     height: 90vh;
 }
 
-.flex{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.logo{
+  display: flex;
+  align-items:flex-start;
+  justify-content: flex-start;
+  padding-top: 20px;
 }
 
-.flexvertical{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
+/* Class Section */
 
 .flexbetween{
+    width: 400px;
     display:flex;
     justify-content: space-between;
 }
@@ -79,13 +103,13 @@ body{
     top: -8px;
     right: 10px;
   }
-    
-  .logo{
-      display: flex;
-      align-items:flex-start;
-      justify-content: flex-start;
-      padding-top: 20px;
+
+  .infoiconwrapper3{
+    position: absolute;
+    top: -2px;
+    right: -8px;
   }
+    
 
   .header1{
       font-size: 50px;
@@ -153,14 +177,8 @@ body{
       font-size: 15px;
   }
 
-  p {
-      text-align: center;
-      font-size: 20px;
-      line-height: 30px;
-  }
 
-  a{
-      color:white;
-      text-decoration: none;
+  .abilitystat{
+    padding: 10px;
   }
   
