@@ -64,7 +64,7 @@ a{
 /* Class Section */
 
 .flexbetween{
-    width: 400px;
+    width: 300px;
     display:flex;
     justify-content: space-between;
 }
@@ -140,35 +140,6 @@ a{
     color: transparent;
   }
 
-  #rogue input{
-    background: url('../img/rogue.png');
-    padding-right: 16px;
-   
-  }
-
-   #fighter input{
-    background: url('../img/fighter.png') no-repeat scroll 0 0 transparent; 
-  }
-
-  #wizard input{
-    background: url('../img/wizard.png') no-repeat scroll 0 0 transparent; 
-  }
-
-  #elf input{
-    background: url('../img/elf.png');
-   
-  }
-
-   #dwarf input{
-    background: url('../img/dwarf.png') no-repeat scroll 0 0 transparent; 
-    padding-right: 20px;
-  }
-
-  #gnome input{
-    background: url('../img/gnome.png') no-repeat scroll 0 0 transparent; 
-    padding-right: 20px;
-  }
-  
   .classselection{
     padding-right: 16px;
   }
