@@ -37,6 +37,14 @@ a{
   align-items: center;
 }
 
+.flex2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 50px;
+}
+
 .flexvertical{
   display: flex;
   justify-content: center;
@@ -64,22 +72,10 @@ a{
 /* Class Section */
 
 .flexbetween{
-    width: 300px;
+    width: 350px;
     display:flex;
     justify-content: space-between;
 }
-
-  .button{
-    background-image: url('../img/menubutton.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: relative;
-    cursor: pointer;
-    width: 150px;
-    height: 120px;
-    border: none;
-    color: white;
-  }
 
   .sectioninfowrapper{
       position: relative;
@@ -128,9 +124,9 @@ a{
       padding-bottom: 20px;
   }
 
-  .header3{
+  h3{
       text-align: center;
-      font-size: 28px;
+      font-size: 26px;
       margin-bottom: 0;
   }
 
@@ -155,4 +151,27 @@ a{
   .abilitystat{
     padding: 10px;
   }
+
+  .button{
+    font-size: 16px;
+    color:white;
+    border: none;
+    width: 150px;
+    height: 120px; 
+    background-image: url('../img/menubutton.png');
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .charactersheet{
+    background-image: url('../img/asicon.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+  }
   
+.alignabilitysheet{
+  width: 124.48px
+}

@@ -11,21 +11,11 @@
 
         <nav class="navbar">
             <div class="flex">
-                <a class="button flex">
-                    <p>Home</p>
-                </a>
-                <a class="button flex">
-                    <p>Class</p>
-                </a>
-                <a class="button flex">
-                    <p>Race</p>
-                </a>
-                <a class="button flex">
-                    <p>Ability Scores</p>
-                </a>
-                <a class="button flex">
-                    <p>Character Sheet</p>
-                </a>
+                <button class="button">Home</button>
+                <button class="button">Class</button>
+                <button class="button">Race</button>
+                <button class="button">Ability Scores</button>
+                <button class="button">Character Sheet</button>
             </div>
         </nav>
 
@@ -36,16 +26,16 @@
             </div>
             <div class="container">
                 <h1 class="fontheader">DUNGEONS AND DRAGONS <br> CHARACTER CREATOR</h1>
-                <p class="description">The Dungeons and Dragons Character Creator will 
+                <p>The Dungeons and Dragons Character Creator will 
                     help <br> you create a starter character whether you are new to the <br>
                     game or a veteran on the adventure lifestyle!</p>
-                 <a class="button flex">
-                    <p>Venture Forward</p>
-                </a>
+                <div class="flex">
+                    <button onclick="classFunction()" class="button">Venture Forward</button>
+                </div>
             </div>
         </section>
 
-        <section id="class">
+        <section id="class" style="display: none;">
             <div class="flexvertical">
                 <div class="sectioninfowrapper">
                     <h2 class="fontheader flex">CLASS</h2>
@@ -57,7 +47,7 @@
                     <a href="/rogue" class="flex">
                         <div class="classselection">
                             <div class="sectioninfowrapper">
-                                <h3 class="header3">ROGUE</h3>
+                                <h3>ROGUE</h3>
                                 <img src="img/infoicon1.png" class="infoiconwrapper2">
                             </div>
                             <img src="img/banner.png" width="100%">
@@ -80,7 +70,7 @@
                     <a href="/fighter" class="flex">
                         <div class="classselection">
                             <div class="sectioninfowrapper">
-                                <h3 class="header3">FIGHTER</h3>
+                                <h3>FIGHTER</h3>
                                 <img src="img/infoicon1.png" class="infoiconwrapper1">
                             </div>
                             <img src="img/banner.png" width="100%">
@@ -103,7 +93,7 @@
                     <a href="/wizard" class="flex">
                         <div class="classselection">
                             <div class="sectioninfowrapper">
-                                <h3 class="header3">WIZARD</h3>
+                                <h3>WIZARD</h3>
                                 <img src="img/infoicon1.png" class="infoiconwrapper1">
                             </div>
                             <img src="img/banner.png" width="100%">
@@ -124,16 +114,12 @@
                 </div>
             </div>
             <div class="flex">
-                <a class="button flex">
-                    <p>Back</p>
-                </a>
-                <a class="button flex">
-                    <p>Continue</p>
-                </a>
+                <button onclick="heroFunction()" class="button">Back</button>
+                <button onclick="raceFunction()" class="button">Continue</button>
             </div>
         </section>
 
-        <section id="race">
+        <section id="race" style="display: none;">
             <div class="flexvertical">
                 <div class="sectioninfowrapper">
                     <h2 class="fontheader flex">RACE</h2>
@@ -145,7 +131,7 @@
                     <a href="/elf" class="flex">
                         <div class="classselection">
                             <div class="sectioninfowrapper">
-                                <h3 class="header3">ELF</h3>
+                                <h3>ELF</h3>
                                 <img src="img/infoicon1.png" class="infoiconwrapper2">
                             </div>
                             <img src="img/banner.png" width="100%">
@@ -168,7 +154,7 @@
                     <a href="/dwarf" class="flex">
                         <div class="classselection">
                             <div class="sectioninfowrapper">
-                                <h3 class="header3">DWARF</h3>
+                                <h3>DWARF</h3>
                                 <img src="img/infoicon1.png" class="infoiconwrapper1">
                             </div>
                             <img src="img/banner.png" width="100%">
@@ -191,7 +177,7 @@
                     <a href="/gnome" class="flex">
                         <div class="classselection">
                             <div class="sectioninfowrapper">
-                                <h3 class="header3">GNOME</h3>
+                                <h3>GNOME</h3>
                                 <img src="img/infoicon1.png" class="infoiconwrapper1">
                             </div>
                             <img src="img/banner.png" width="100%">
@@ -212,19 +198,17 @@
                 </div>
             </div>
             <div class="flex">
-                <a class="button flex">
-                    <p>Back</p>
-                </a>
-                <a class="button flex">
-                    <p>Continue</p>
-                </a>
+                <button class="button">Back</button>
+                <button onclick="abilityFunction()" class="button">Continue</button>
             </div>
         </section>
 
-        <section id="abilityscores">
-            <div class="sectioninfowrapper">
-                <h2 class="fontheader flex">ABILITY SCORES</h2>
-                <img src="img/infoicon.png" class="infoiconwrapper">
+        <section id="abilityscores" style="display: none;">
+            <div class="flexvertical">
+                <div class="sectioninfowrapper">
+                    <h2 class="fontheader flex">ABILITY SCORES</h2>
+                    <img src="img/infoicon.png" class="infoiconwrapper">
+                </div>
             </div>
             <div class="container flexvertical">
                 <div class="sectioninfowrapper">
@@ -235,7 +219,7 @@
                 <p>0/27</p>
                 <div>
                     <div class="flexbetween">
-                        <div class="sectioninfowrapper">
+                        <div class="sectioninfowrapper alignabilitysheet">
                             <h4>Strength</h4>
                             <img src="img/infoicon1.png" class="infoiconwrapper3">
                         </div>
@@ -246,7 +230,7 @@
                         </div>
                     </div>
                     <div class="flexbetween">
-                        <div class="sectioninfowrapper">
+                        <div class="sectioninfowrapper alignabilitysheet">
                             <h4>Dexterity</h4>
                             <img src="img/infoicon1.png" class="infoiconwrapper3">
                         </div>
@@ -268,7 +252,7 @@
                         </div>
                     </div>
                     <div class="flexbetween">
-                        <div class="sectioninfowrapper">
+                        <div class="sectioninfowrapper alignabilitysheet">
                             <h4>Intelligence</h4>
                             <img src="img/infoicon1.png" class="infoiconwrapper3">
                         </div>
@@ -279,7 +263,7 @@
                         </div>
                     </div>
                     <div class="flexbetween">
-                        <div class="sectioninfowrapper">
+                        <div class="sectioninfowrapper alignabilitysheet">
                             <h4>Wisdom</h4>
                             <img src="img/infoicon1.png" class="infoiconwrapper3">
                         </div>
@@ -290,7 +274,7 @@
                         </div>
                     </div>
                     <div class="flexbetween">
-                        <div class="sectioninfowrapper">
+                        <div class="sectioninfowrapper alignabilitysheet">
                             <h4>Charisma</h4>
                             <img src="img/infoicon1.png" class="infoiconwrapper3">
                         </div>
@@ -302,16 +286,68 @@
                     </div>
                 </div>
                 <div class="flex">
-                    <a class="button flex">
-                        <p>Back</p>
-                    </a>
-                    <a class="button flex">
-                        <p>Continue</p>
-                    </a>
+                    <button onclick="raceFunction()" class="button">Back</button>
+                    <button class="button">Continue</button>
                 </div>
             </div>
         </section>
 
-    <script src="index.js"></script>
+        <section id="charactersheet">
+            <div class="container">
+                <p>Name Here</p>
+                <div class="flex2">
+                    <div class="flexbetween">
+                        <p>Race</p> 
+                        <p>Alignment</p>
+                    </div>
+                    <div class="flexbetween">
+                        <p>Class</p> 
+                        <p>Age</p>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div>
+                        <p>STR</p>
+                        <div class="charactersheet flex">
+                            <p>15</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p>DEX</p>
+                        <div class="charactersheet flex">
+                            <p>8</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p>CON</p>
+                        <div class="charactersheet flex">
+                            <p>15</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div>
+                        <p>INT</p>
+                        <div class="charactersheet flex">
+                            <p>15</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p>WIS</p>
+                        <div class="charactersheet flex">
+                            <p>15</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p>CHA</p>
+                        <div class="charactersheet flex">
+                            <p>15</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <script src="index.js" type="text/javascript"></script>
     </body>
 </html>
