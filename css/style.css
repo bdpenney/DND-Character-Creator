@@ -59,7 +59,7 @@ a{
     background-position: center;
     background-size:cover; 
     background-repeat: no-repeat;
-    height: 90vh;
+    height: 100vh;
 }
 
 .logo{
@@ -174,4 +174,39 @@ a{
   
 .alignabilitysheet{
   width: 124.48px
+}
+
+.charactersheetborder{
+  position: relative;
+}
+
+.lefttopcorner{
+  position: absolute;
+  transform: rotate(90deg);
+  width: 150px;
+}
+
+.righttopcorner{
+  position: absolute;
+  transform: rotate(180deg);
+  width: 150px;
+  left: 960px;
+}
+
+.leftbottomcorner{
+  position: absolute;
+  width: 150px;
+  top: 582px;
+}
+
+.rightbottomcorner{
+  position: absolute;
+  width: 150px;
+  transform: rotate(270deg);
+  left: 960px;
+  top: 582px;
+}
+
+.ability{
+  padding: 10px;
 }

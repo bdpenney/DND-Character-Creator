@@ -9,7 +9,7 @@
 
     <body>
 
-        <nav class="navbar">
+        <nav id="navbar" style="display: none;">
             <div class="flex">
                 <button class="button">Home</button>
                 <button class="button">Class</button>
@@ -198,7 +198,7 @@
                 </div>
             </div>
             <div class="flex">
-                <button class="button">Back</button>
+                <button onclick="class2Function()" class="button">Back</button>
                 <button onclick="abilityFunction()" class="button">Continue</button>
             </div>
         </section>
@@ -287,13 +287,17 @@
                 </div>
                 <div class="flex">
                     <button onclick="raceFunction()" class="button">Back</button>
-                    <button class="button">Continue</button>
+                    <button onclick="CSFunction()" class="button">Continue</button>
                 </div>
             </div>
         </section>
 
-        <section id="charactersheet">
-            <div class="container">
+        <section id="charactersheet" style="display: none;">
+            <div class="container charactersheetborder">
+                <img class="lefttopcorner" src="img/charactersheetborder.png">
+                <img class="righttopcorner" src="img/charactersheetborder.png">
+                <img class="leftbottomcorner" src="img/charactersheetborder.png">
+                <img class="rightbottomcorner" src="img/charactersheetborder.png">
                 <p>Name Here</p>
                 <div class="flex2">
                     <div class="flexbetween">
@@ -306,19 +310,19 @@
                     </div>
                 </div>
                 <div class="flex">
-                    <div>
+                    <div class="ability">
                         <p>STR</p>
                         <div class="charactersheet flex">
                             <p>15</p>
                         </div>
                     </div>
-                    <div>
+                    <div class="ability">
                         <p>DEX</p>
                         <div class="charactersheet flex">
                             <p>8</p>
                         </div>
                     </div>
-                    <div>
+                    <div class="ability">
                         <p>CON</p>
                         <div class="charactersheet flex">
                             <p>15</p>
@@ -326,19 +330,19 @@
                     </div>
                 </div>
                 <div class="flex">
-                    <div>
+                    <div class="ability">
                         <p>INT</p>
                         <div class="charactersheet flex">
                             <p>15</p>
                         </div>
                     </div>
-                    <div>
+                    <div class="ability">
                         <p>WIS</p>
                         <div class="charactersheet flex">
                             <p>15</p>
                         </div>
                     </div>
-                    <div>
+                    <div class="ability">
                         <p>CHA</p>
                         <div class="charactersheet flex">
                             <p>15</p>
