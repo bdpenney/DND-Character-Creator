@@ -12,7 +12,7 @@ function classFunction() {
   function raceFunction() {
     document.getElementById("race").style.display = 'block';
     document.getElementById("class").style.display= 'none';
-    document.getElementById("abiliyscores").style.display= 'none';
+    document.getElementById("abilityscores").style.display= 'none';
   }
 
   function abilityFunction() {
@@ -28,4 +28,5 @@ function classFunction() {
 
   function CSFunction() {
       document.getElementById("charactersheet").style.display= 'block';
+      document.getElementById("abilityscores").style.display= 'none';
   }
