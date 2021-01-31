@@ -1,23 +1,69 @@
-/* Common Styling */
+/* Common Body Styling */
 
 body{
-    background-color: black;
-    margin: 0; 
-    color: white;
+  background-color: black;
+  margin: 0; 
+  color: white;
 }
 
 .container{
-    max-width: 960px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-bottom: 20px;
+  max-width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 20px;
 }
+
+.flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexvertical{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.flexbetween{
+  width: 350px;
+  display:flex;
+  justify-content: space-between;
+}
+
+/* Common Text Styling */
 
 .fontheader{
     color:#BE9442; 
     text-align: center;
     font-weight: bold;
     margin: 0;
+}
+
+h1{
+  font-size: 50px;
+  font-family: 'Crimson Text', serif;
+  line-height: 80px;
+  padding-top: 30px;
+}
+
+h2{
+  font-size: 45px;
+  font-family: 'Crimson Text', serif;
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+h3{
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 0;
+}
+
+h4{
+  text-transform: uppercase;
+  text-align: right;
 }
 
 p{
@@ -31,25 +77,12 @@ a{
   text-decoration: none;
 }
 
-.flex{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .flex2{
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   padding-bottom: 50px;
-}
-
-.flexvertical{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
 
 /* Hero Section */
@@ -69,13 +102,7 @@ a{
   padding-top: 20px;
 }
 
-/* Class Section */
-
-.flexbetween{
-    width: 350px;
-    display:flex;
-    justify-content: space-between;
-}
+/* Info Icons Section */
 
   .sectioninfowrapper{
       position: relative;
@@ -104,41 +131,26 @@ a{
     top: -2px;
     right: -8px;
   }
-   
-  h4{
-    text-transform: uppercase;
-    text-align: right;
+
+  /* Class Section */
+
+  #rogueButton{
+   background-color: black;
+   color: white;
+   border: none;
   }
 
-  h1{
-      font-size: 50px;
-      font-family: 'Crimson Text', serif;
-      line-height: 80px;
-      padding-top: 30px;
-  }
-
-  h2{
-      font-size: 45px;
-      font-family: 'Crimson Text', serif;
-      margin: 0;
-      padding-bottom: 20px;
-  }
-
-  h3{
-      text-align: center;
-      font-size: 26px;
-      margin-bottom: 0;
-  }
-
-  div input{
-    cursor: pointer;
-    width: 145px;
-    height: 250px;
-    padding-bottom: 2px;
+  #fighterButton{
+    background-color: black;
+    color: white;
     border: none;
-    font-size: 12px;
-    color: transparent;
-  }
+   }
+
+  #wizardButton{
+    background-color: black;
+    color: white;
+    border: none;
+   }
 
   .classselection{
     padding-right: 16px;
@@ -174,6 +186,15 @@ a{
   
 .alignabilitysheet{
   width: 124.48px
+}
+
+/* Character Sheet Section */
+
+#rogueButton:hover {opacity: 1;}
+
+.classChoices{
+opacity: 50%;
+transition: 0.3s;
 }
 
 .charactersheetborder{
