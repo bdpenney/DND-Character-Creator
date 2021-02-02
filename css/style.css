@@ -19,6 +19,14 @@ body{
   align-items: center;
 }
 
+.flex2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 50px;
+}
+
 .flexvertical{
   display: flex;
   justify-content: center;
@@ -58,31 +66,21 @@ h2{
 h3{
   text-align: center;
   font-size: 26px;
+  font-family: 'Crimson Text', serif;
   margin-bottom: 0;
 }
 
 h4{
   text-transform: uppercase;
   text-align: right;
+  font-family: 'Crimson Text', serif;
 }
 
 p{
   text-align: center;
   font-size: 18px;
   line-height: 30px;
-}
-
-a{
-  color:white;
-  text-decoration: none;
-}
-
-.flex2{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  padding-bottom: 50px;
+  font-family: 'Barlow', sans-serif;
 }
 
 /* Hero Section */
@@ -111,19 +109,19 @@ a{
   .infoiconwrapper{
       position: absolute;
       top: 0px;
-      right: -30px;
+      right: -35px;
   }
 
   .infoiconwrapper1{
     position: absolute;
     top: -8px;
-    right: -5px;
+    right: -10px;
   }
 
   .infoiconwrapper2{
     position: absolute;
     top: -8px;
-    right: 10px;
+    right: -5px;
   }
 
   .infoiconwrapper3{
@@ -132,37 +130,7 @@ a{
     right: -8px;
   }
 
-  /* Class Section */
-
-  #rogueButton{
-   background-color: black;
-   color: white;
-   border: none;
-  }
-
-  #fighterButton{
-    background-color: black;
-    color: white;
-    border: none;
-   }
-
-  #wizardButton{
-    background-color: black;
-    color: white;
-    border: none;
-   }
-
-  .classselection{
-    padding-right: 16px;
-  }
-
-  .classinfo{
-      font-size: 15px;
-  }
-
-  .abilitystat{
-    padding: 10px;
-  }
+  /* Button Styling Section */
 
   .button{
     font-size: 16px;
@@ -176,12 +144,40 @@ a{
     background-size: contain;
   }
 
-  .charactersheet{
-    background-image: url('../img/asicon.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 100px;
-    height: 100px;
+  .optionBackground{
+    background-color: black;
+    color: white;
+    border: none;
+   }
+
+   .characterChoices:hover {
+    opacity: 1; }
+  
+  .characterChoices{
+  opacity: 50%;
+  transition: 0.3s;
+  }
+
+  /* Class Section */
+
+  .classselection{
+    padding-right: 16px;
+  }
+
+  .classinfo{
+      font-size: 14px;
+  }
+
+  /* Race Section */
+
+  #raceContinue{
+    opacity: 0.5;
+  }
+
+  /* Ability Scores Section */
+
+  .abilitystat{
+    padding: 10px;
   }
   
 .alignabilitysheet{
@@ -190,11 +186,12 @@ a{
 
 /* Character Sheet Section */
 
-#rogueButton:hover {opacity: 1;}
-
-.classChoices{
-opacity: 50%;
-transition: 0.3s;
+.charactersheet{
+  background-image: url('../img/asicon.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 100px;
 }
 
 .charactersheetborder{
@@ -211,7 +208,7 @@ transition: 0.3s;
   position: absolute;
   transform: rotate(180deg);
   width: 150px;
-  left: 960px;
+  left: 800px;
 }
 
 .leftbottomcorner{
@@ -224,7 +221,7 @@ transition: 0.3s;
   position: absolute;
   width: 150px;
   transform: rotate(270deg);
-  left: 960px;
+  left: 800px;
   top: 582px;
 }
 
