@@ -9,17 +9,17 @@
 
     <body>
 
-        <nav id="navbar" style="display: none;">
+        <nav id="navbarSection" class="hidden">
             <div class="flex">
-                <button class="button">Home</button>
-                <button class="button">Class</button>
-                <button class="button">Race</button>
-                <button class="button">Ability Scores</button>
-                <button class="button">Character Sheet</button>
+                <button id="homeButton" class="button">Home</button>
+                <button id="classButton" class="button">Class</button>
+                <button id="raceButton" class="button">Race</button>
+                <button id="abilitiesButton" class="button">Abilities</button>
+                <button id="charactersheetButton" class="button">Character Sheet</button>
             </div>
         </nav>
 
-        <section id="hero" class="hero">
+        <section id="heroSection" class="hero">
             <div class="flex logo">
                 <img src="img/dicelogo.png" width="5%">
                 <p class="fontheader">D&D Builder</p>
@@ -35,7 +35,7 @@
             </div>
         </section>
 
-        <section id="class">
+        <section id="classSection" class="hidden">
             <div class="flexvertical">
                 <div class="sectioninfowrapper">
                     <h2 class="fontheader flex">CLASS</h2>
@@ -119,7 +119,7 @@
             </div>
         </section>
 
-        <section id="race">
+        <section id="raceSection" class="hidden">
             <div class="flexvertical">
                 <div class="sectioninfowrapper">
                     <h2 class="fontheader flex">RACE</h2>
@@ -199,14 +199,14 @@
             </div>
             <div class="flex">
                 <button class="button" id="classBack">Back</button>
-                <button class="button" id="abilityscoreContinue">Continue</button>
+                <button class="button" id="abilitiesContinue">Continue</button>
             </div>
         </section>
 
-        <section id="abilityscores">
+        <section id="abilitiesSection" class="hidden">
             <div class="flexvertical">
                 <div class="sectioninfowrapper">
-                    <h2 class="fontheader flex">ABILITY SCORES</h2>
+                    <h2 class="fontheader flex">ABILITIES</h2>
                     <img src="img/infoicon.png" class="infoiconwrapper">
                 </div>
             </div>
@@ -292,7 +292,7 @@
             </div>
         </section>
 
-        <section id="charactersheet">
+        <section id="charactersheetSection" class="hidden">
             <div class="container charactersheetborder">
                 <img class="lefttopcorner" src="img/charactersheetborder.png">
                 <img class="righttopcorner" src="img/charactersheetborder.png">

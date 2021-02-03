@@ -228,3 +228,9 @@ p{
 .ability{
   padding: 10px;
 }
+
+/* Utility */
+
+.hidden{
+  display: none;
+}
