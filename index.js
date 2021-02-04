@@ -22,9 +22,10 @@ const raceSection = document.getElementById("raceSection");
 const abilitiesSection = document.getElementById("abilitiesSection");
 const charactersheetSection = document.getElementById("charactersheetSection");
 
-/* Const Class Options */
-const rogueButton = 
+const rogueButton = document.getElementById('rogueButton');
 
+
+/* Navigation Bar Buttons */
 homeButton.addEventListener('click', () => {
     heroSection.classList.remove('hidden');
     navbarSection.classList.add('hidden');
@@ -57,6 +58,8 @@ charactersheetButton.addEventListener('click', () => {
     abilitiesSection.classList.add('hidden');
     classSection.classList.add('hidden');
 })
+
+/* Navigation Buttons */
 
 heroButton.addEventListener('click', () => {
     classSection.classList.remove('hidden');

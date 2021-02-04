@@ -170,7 +170,7 @@ p{
 
   /* Race Section */
 
-  #raceContinue{
+  .continueButton{
     opacity: 0.5;
   }
 
@@ -192,6 +192,24 @@ p{
   background-repeat: no-repeat;
   width: 100px;
   height: 100px;
+}
+
+.editIcon{
+  position: relative;
+}
+
+.editIconWrapper{
+  position: absolute;
+  width: 20px;
+  top: -3px;
+  left: 530px;
+}
+
+.editIconWrapper1{
+  position: absolute;
+  width: 20px;
+  top: -3px;
+  left: 200px;
 }
 
 .charactersheetborder{
@@ -229,7 +247,7 @@ p{
   padding: 10px;
 }
 
-/* Utility */
+/* JS CSS */
 
 .hidden{
   display: none;
