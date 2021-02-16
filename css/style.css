@@ -158,6 +158,10 @@ p{
   transition: 0.3s;
   }
 
+  .characterChoices1{
+    opacity: 100%;
+  }
+
   /* Class Section */
 
   .classselection{
@@ -252,3 +256,5 @@ p{
 .hidden{
   display: none;
 }
+
+

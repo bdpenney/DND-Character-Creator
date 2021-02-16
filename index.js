@@ -22,13 +22,14 @@ const raceSection = document.getElementById("raceSection");
 const abilitiesSection = document.getElementById("abilitiesSection");
 const charactersheetSection = document.getElementById("charactersheetSection");
 
-const rogueButton = document.getElementById('rogueButton');
-
-
 /* Navigation Bar Buttons */
 homeButton.addEventListener('click', () => {
     heroSection.classList.remove('hidden');
     navbarSection.classList.add('hidden');
+    classSection.classList.add('hidden');
+    raceSection.classList.add('hidden');
+    abilitiesSection.classList.add('hidden');
+    charactersheetSection.classList.add('hidden');
 })
 
 classButton.addEventListener('click', () => {
@@ -97,3 +98,6 @@ charactersheetContinue.addEventListener('click', () => {
     charactersheetSection.classList.remove('hidden');
     abilitiesSection.classList.add('hidden');
 })
+
+
+
