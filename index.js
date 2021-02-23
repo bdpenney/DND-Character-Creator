@@ -26,15 +26,17 @@ const charactersheetSection = document.getElementById("charactersheetSection");
 
 let raceSelected = ['elfButton', 'dwarfButton', 'gnomeButton'];
 
-const rogueButton = document.getElementById('rogueButton');
-const figherButton = document.getElementById('fighterButton');
+const elfButton = document.getElementById('elfButton');
+const dwarfButton = document.getElementById('dwarfButton');
+const gnomeButton = document.getElementById('gnomeButton');
 
 /* Class Selection */
 
-let classSelected = ['rogueButton', 'figherButton', 'wizardButton'];
+let classSelected = ['rogueButton', 'fighterButton', 'wizardButton'];
 
-const elfButton = document.getElementById('elfButton');
-const eButton = document.getElementById('elfButton');
+const rogueButton = document.getElementById('rogueButton');
+const fighterButton = document.getElementById('fighterButton');
+const wizardButton = document.getElementById('wizardButton');
 
 
 /* Navigation Bar Buttons */
