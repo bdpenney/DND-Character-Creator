@@ -22,6 +22,21 @@ const raceSection = document.getElementById("raceSection");
 const abilitiesSection = document.getElementById("abilitiesSection");
 const charactersheetSection = document.getElementById("charactersheetSection");
 
+/* Race Selection */
+
+let raceSelected = ['elfButton', 'dwarfButton', 'gnomeButton'];
+
+const rogueButton = document.getElementById('rogueButton');
+const figherButton = document.getElementById('fighterButton');
+
+/* Class Selection */
+
+let classSelected = ['rogueButton', 'figherButton', 'wizardButton'];
+
+const elfButton = document.getElementById('elfButton');
+const eButton = document.getElementById('elfButton');
+
+
 /* Navigation Bar Buttons */
 homeButton.addEventListener('click', () => {
     heroSection.classList.remove('hidden');
@@ -30,7 +45,7 @@ homeButton.addEventListener('click', () => {
     raceSection.classList.add('hidden');
     abilitiesSection.classList.add('hidden');
     charactersheetSection.classList.add('hidden');
-})
+});
 
 classButton.addEventListener('click', () => {
     classSection.classList.remove('hidden');
