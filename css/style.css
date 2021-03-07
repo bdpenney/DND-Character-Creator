@@ -158,8 +158,9 @@ p{
   transition: 0.3s;
   }
 
-  .characterChoices1{
+  .characterSelected{
     opacity: 100%;
+    transition: 0.2s;
   }
 
   /* Class Section */

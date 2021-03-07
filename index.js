@@ -22,19 +22,54 @@ const raceSection = document.getElementById("raceSection");
 const abilitiesSection = document.getElementById("abilitiesSection");
 const charactersheetSection = document.getElementById("charactersheetSection");
 
-/* Race Selection */
+/* Race Selection Consts */
 
 const elfButton = document.getElementById("elfButton");
 const dwarfButton = document.getElementById("dwarfButton");
 const gnomeButton = document.getElementById("gnomeButton");
 
-/* Class Selection */
+/* Class Selection Consts */
 
 const rogueButton = document.getElementById("rogueButton");
 const fighterButton = document.getElementById("fighterButton");
 const wizardButton = document.getElementById("wizardButton");
 
+/*Character Selection Array*/
+let characterSelections = ['class', 'race', 'strength', 'dexterity', 'constitution', 'intelligence', 'widsom', 'charsima'];
 
+/* Class Selection Event Listeners */
+
+rogueButton.addEventListener('click', () => {
+    rogueButton.classList.add('classSelected');
+    characterSelections[0]= 'Rogue';
+})
+
+fighterButton.addEventListener('click', () => {
+    fighterButton.classList.add('classSelected');
+    characterSelections[0]= 'Fighter';
+})
+
+wizardButton.addEventListener('click', () => {
+    wizardButton.classList.add('classSelected');
+    characterSelections[0]= 'Wizard';
+})
+
+/* Race Selection Event Listeners */
+
+elfButton.addEventListener('click', () => {
+    elfButton.classList.add('classSelected');
+    characterSelections[1]= 'Elf';
+})
+
+dwarfButton.addEventListener('click', () => {
+    dwarfButton.classList.add('classSelected');
+    characterSelections[1]= 'Dwarf';
+})
+
+gnomeButton.addEventListener('click', () => {
+    gnomeButton.classList.add('classSelected');
+    characterSelections[1]= 'Gnome';
+})
 
 /* Navigation Bar Buttons */
 homeButton.addEventListener('click', () => {
