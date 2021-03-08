@@ -142,10 +142,11 @@ p{
     background-color: transparent;
     background-repeat: no-repeat;
     background-size: contain;
+    border: none;
   }
 
   .optionBackground{
-    background-color: black;
+    background-color: transparent;
     color: white;
     border: none;
    }
@@ -161,6 +162,26 @@ p{
   .characterSelected{
     opacity: 100%;
     transition: 0.2s;
+  }
+
+  .abilitiesLeft{
+    background-image: url('../img/arrowleft.png');
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: contain;
+    border: none;
+    height: 15px;
+    width: 15px;
+  }
+
+  .abilitiesRight{
+    background-image: url('../img/arrowright.png');
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: contain;
+    border: none;
+    height: 15px;
+    width: 15px;
   }
 
   /* Class Section */
