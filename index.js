@@ -1,4 +1,4 @@
-/* Const NavBar Buttons */
+// Const NavBar Buttons
 const homeButton = document.getElementById("homeButton");
 const classButton = document.getElementById("classButton");
 const raceButton = document.getElementById("raceButton");
@@ -75,96 +75,141 @@ gnomeButton.addEventListener('click', () => {
     characterSelections[1] = 'Gnome';
 })
 
-/* Abilities Selection Consts */
-//Find a way to simplify this code//
+// Abilities Selection Consts 
 
 const strLeft = document.getElementById("strLeft");
 const strRight = document.getElementById("strRight");
 
-let strResult = 8;
+let strValue = 8; 
 
 strLeft.addEventListener('click', () => {
-    if(strResult > 8 ){
-        strResult --;
-        document.getElementById("strResult").innerHTML = strResult;
+    if(strValue > 8 ){
+        strValue --;
+        document.getElementById("strResult").innerHTML = strValue;
       }
 })
 
 strRight.addEventListener('click', () => {
-    if(strResult < 13 ){
-        strResult ++; 
-        document.getElementById("strResult").innerHTML = strResult;
+    if(strValue < 15 ){
+        strValue ++; 
+        document.getElementById("strResult").innerHTML = strValue;
+        pointTotal --;
+        document.getElementById("pointsCounter").innerHTML = pointTotal;
       }
 })
 
-//Search for global options for these buttons// 
 
 const dexLeft = document.getElementById("dexLeft");
 const dexRight = document.getElementById("dexRight");
 
-let dexResult = 8;
+let dexValue = 8;
 
 dexLeft.addEventListener('click', () => {
-    if(dexResult > 8 ){
-        dexResult --;
-        document.getElementById("dexResult").innerHTML = dexResult;
+    if(dexValue > 8 ){
+        dexValue --;
+        document.getElementById("dexResult").innerHTML = dexValue;
       }
 })
 
 dexRight.addEventListener('click', () => {
-    if(dexResult < 13 ){
-        dexResult ++; 
-        document.getElementById("dexResult").innerHTML = dexResult;
+    if(dexValue < 15 ){
+        dexValue ++; 
+        document.getElementById("dexResult").innerHTML = dexValue;
+        pointTotal --;
+        document.getElementById("pointsCounter").innerHTML = pointTotal;
       }
 })
 
 const conLeft = document.getElementById("conLeft");
 const conRight = document.getElementById("conRight");
 
-let conResult = 8;
+let conValue = 8;
 
-//Find a way to disable 'click' when ability= 8//
 conLeft.addEventListener('click', () => {
-    if(conResult > 8 ){
-        conResult --;
-        document.getElementById("conResult").innerHTML = conResult;
+    if(conValue > 8 ){
+        conValue --;
+        document.getElementById("conResult").innerHTML = conValue;
       }
 })
 
-//Add a way to increase by 2 when increasing value from 13 >> 14 and 14 >> 15//
 conRight.addEventListener('click', () => {
-    if(conResult < 13 ){
-        conResult ++; 
-        document.getElementById("conResult").innerHTML = conResult;
+    if(conValue < 15 ){
+        conValue ++; 
+        document.getElementById("conResult").innerHTML = conValue;
+        pointTotal --;
+        document.getElementById("pointsCounter").innerHTML = pointTotal;
       }
 })
 
 const intLeft = document.getElementById("intLeft");
 const intRight = document.getElementById("intRight");
 
-//Keep variablr for ability value or write in HTML?//
-let intResult = 8;
+
+let intValue = 8;
 
 intLeft.addEventListener('click', () => {
-    if(intResult > 8 ){
-        intResult --;
-        document.getElementById("intResult").innerHTML = intResult;
+    if(intValue > 8 ){
+        intValue --;
+        document.getElementById("intResult").innerHTML = intValue;
       }
 })
 
 intRight.addEventListener('click', () => {
-    if(intResult < 13 ){
-        intResult ++; 
-        document.getElementById("intResult").innerHTML = intResult;
+    if(intValue < 15 ){
+        intValue ++; 
+        document.getElementById("intResult").innerHTML = intValue;
+        pointTotal --;
+        document.getElementById("pointsCounter").innerHTML = pointTotal;
       }
 })
 
+const wisLeft = document.getElementById("wisLeft");
+const wisRight = document.getElementById("wisRight");
 
-/* Abilities Selection Event Listeners */
+let wisValue = 8;
 
+wisLeft.addEventListener('click', () => {
+    if(wisValue > 8 ){
+        wisValue --;
+        document.getElementById("wisResult").innerHTML = wisValue;
+      }
+})
 
+wisRight.addEventListener('click', () => {
+    if(wisValue < 15 ){
+        wisValue ++; 
+        document.getElementById("wisResult").innerHTML = wisValue;
+        pointTotal --;
+        document.getElementById("pointsCounter").innerHTML = pointTotal;
+      }
+})
 
-/* Navigation Bar Buttons */
+const chaLeft = document.getElementById("chaLeft");
+const chaRight = document.getElementById("chaRight");
+
+let chaValue = 8;
+
+chaLeft.addEventListener('click', () => {
+    if(chaValue > 8 ){
+        chaValue --;
+        document.getElementById("chaResult").innerHTML = chaValue;
+      }
+})
+
+chaRight.addEventListener('click', () => {
+    if(chaValue < 15 ){
+        chaValue ++; 
+        document.getElementById("chaResult").innerHTML = chaValue;
+        pointTotal --;
+        document.getElementById("pointsCounter").innerHTML = pointTotal;
+      }
+})
+
+//Points Counter
+
+let pointTotal = 27;
+
+// Navigation Bar Buttons
 
 homeButton.addEventListener('click', () => {
     heroSection.classList.remove('hidden');
@@ -240,6 +285,12 @@ raceBack.addEventListener('click', () => {
 charactersheetContinue.addEventListener('click', () => {
     charactersheetSection.classList.remove('hidden');
     abilitiesSection.classList.add('hidden');
+    characterSelections[2]= strValue;
+    characterSelections[3] = dexValue;
+    characterSelections[4] = conValue;
+    characterSelections[5] = intValue;
+    characterSelections[6] = wisValue;
+    characterSelections[7] = chaValue;
 })
 
 
