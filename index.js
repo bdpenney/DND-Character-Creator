@@ -83,21 +83,34 @@ const strRight = document.getElementById("strRight");
 let strValue = 8; 
 
 strLeft.addEventListener('click', () => {
-    if(strValue > 8 ){
+    if((strValue > 8) && (strValue <= 13)){
         strValue --;
         document.getElementById("strResult").innerHTML = strValue;
+        pointTotal ++;
+        document.getElementById("pointsCounter").innerHTML = pointTotal;
       }
+    else if((strValue >= 13) && (strValue <= 15)){
+        strValue --;
+        document.getElementById("strResult").innerHTML = strValue;
+        pointTotal += 2;
+        document.getElementById("pointsCounter").innerHTML = pointTotal;
+    }
 })
 
 strRight.addEventListener('click', () => {
-    if(strValue < 15 ){
+    if(strValue < 13 ){
         strValue ++; 
         document.getElementById("strResult").innerHTML = strValue;
         pointTotal --;
         document.getElementById("pointsCounter").innerHTML = pointTotal;
       }
+    else if ((strValue >= 13) && (strValue < 15)){
+        strValue ++;
+        document.getElementById("strResult").innerHTML = strValue;
+        pointTotal -= 2;
+        document.getElementById("pointsCounter").innerHTML = pointTotal;
+    }
 })
-
 
 const dexLeft = document.getElementById("dexLeft");
 const dexRight = document.getElementById("dexRight");
@@ -105,19 +118,33 @@ const dexRight = document.getElementById("dexRight");
 let dexValue = 8;
 
 dexLeft.addEventListener('click', () => {
-    if(dexValue > 8 ){
+    if((dexValue > 8) && (strValue <= 13)){
         dexValue --;
         document.getElementById("dexResult").innerHTML = dexValue;
+        pointTotal ++;
+        document.getElementById("pointsCounter").innerHTML = pointTotal;
       }
+      else if((dexValue >= 13) && (dexValue <= 15)){
+        dexValue --;
+        document.getElementById("dexResult").innerHTML = dexValue;
+        pointTotal += 2;
+        document.getElementById("pointsCounter").innerHTML = pointTotal;
+    }
 })
 
 dexRight.addEventListener('click', () => {
-    if(dexValue < 15 ){
+    if(dexValue < 13 ){
         dexValue ++; 
         document.getElementById("dexResult").innerHTML = dexValue;
         pointTotal --;
         document.getElementById("pointsCounter").innerHTML = pointTotal;
       }
+      else if ((dexValue >= 13) && (dexValue < 15)){
+        dexValue ++;
+        document.getElementById("dexResult").innerHTML = dexValue;
+        pointTotal -= 2;
+        document.getElementById("pointsCounter").innerHTML = pointTotal;
+    }
 })
 
 const conLeft = document.getElementById("conLeft");
@@ -197,17 +224,12 @@ chaLeft.addEventListener('click', () => {
 })
 
 chaRight.addEventListener('click', () => {
-    if(chaValue < 12 ){
+    if(chaValue < 15 ){
         chaValue ++; 
         document.getElementById("chaResult").innerHTML = chaValue;
         pointTotal --;
         document.getElementById("pointsCounter").innerHTML = pointTotal;
       }
-    if (chaValue >= 13){
-        chaValue ++;
-        pointTotal += 2;
-        document.getElementById("pointsCounter").innerHTML = pointTotal;
-    }
 })
 
 //Points Counter
