@@ -197,17 +197,24 @@ chaLeft.addEventListener('click', () => {
 })
 
 chaRight.addEventListener('click', () => {
-    if(chaValue < 15 ){
+    if(chaValue < 12 ){
         chaValue ++; 
         document.getElementById("chaResult").innerHTML = chaValue;
         pointTotal --;
         document.getElementById("pointsCounter").innerHTML = pointTotal;
       }
+    if (chaValue >= 13){
+        chaValue ++;
+        pointTotal += 2;
+        document.getElementById("pointsCounter").innerHTML = pointTotal;
+    }
 })
 
 //Points Counter
 
 let pointTotal = 27;
+const pointMax = 27;
+const pointMin = 0;
 
 // Navigation Bar Buttons
 

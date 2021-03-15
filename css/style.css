@@ -34,7 +34,7 @@ body{
 }
 
 .flexbetween{
-  width: 350px;
+  width: 300px;
   display:flex;
   justify-content: space-between;
 }
@@ -125,8 +125,8 @@ p{
 
   .infoiconwrapper3{
     position: absolute;
-    top: -2px;
-    right: -8px;
+    top: 0px;
+    right: -14px;
   }
 
   /* Button Styling Section */
@@ -200,6 +200,10 @@ p{
   }
 
   /* Ability Scores Section */
+
+  .abilitypadding{
+    padding-right: 50px;
+  }
 
   .abilitystat{
     padding: 10px;
