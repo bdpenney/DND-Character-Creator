@@ -104,7 +104,7 @@ strRight.addEventListener('click', () => {
         pointTotal --;
         document.getElementById("pointsCounter").innerHTML = pointTotal;
       }
-    else if ((strValue >= 13) && (strValue < 15)){
+    else if ((strValue >= 13) && (strValue < 15) && (pointTotal >= 2)){
         strValue ++;
         document.getElementById("strResult").innerHTML = strValue;
         pointTotal -= 2;
@@ -131,7 +131,7 @@ dexLeft.addEventListener('click', () => {
         document.getElementById("pointsCounter").innerHTML = pointTotal;
     }
 })
-//Copy xxxRight to all buttons
+
 dexRight.addEventListener('click', () => {
     if(dexValue < 13 ){
         dexValue ++; 
@@ -139,7 +139,7 @@ dexRight.addEventListener('click', () => {
         pointTotal --;
         document.getElementById("pointsCounter").innerHTML = pointTotal;
       }
-      else if ((dexValue >= 13) && (dexValue < 15)){
+      else if ((dexValue >= 13) && (dexValue < 15) && (pointTotal >= 2)){
         dexValue ++;
         document.getElementById("dexResult").innerHTML = dexValue;
         pointTotal -= 2;
@@ -174,7 +174,7 @@ conRight.addEventListener('click', () => {
         pointTotal --;
         document.getElementById("pointsCounter").innerHTML = pointTotal;
       }
-      else if ((conValue >= 13) && (conValue < 15)){
+      else if ((conValue >= 13) && (conValue < 15) && (pointTotal >= 2)){
         conValue ++;
         document.getElementById("conResult").innerHTML = conValue;
         pointTotal -= 2;
@@ -210,7 +210,7 @@ intRight.addEventListener('click', () => {
         pointTotal --;
         document.getElementById("pointsCounter").innerHTML = pointTotal;
       }
-      else if ((intValue >= 13) && (intValue < 15)){
+      else if ((intValue >= 13) && (intValue < 15) && (pointTotal >= 2)){
         intValue ++;
         document.getElementById("intResult").innerHTML = intValue;
         pointTotal -= 2;
@@ -230,9 +230,9 @@ wisLeft.addEventListener('click', () => {
         pointTotal ++;
         document.getElementById("pointsCounter").innerHTML = pointTotal;
       }
-    else if((strValue >= 13) && (strValue <= 15)){
-        strValue --;
-        document.getElementById("strResult").innerHTML = strValue;
+    else if((wisValue >= 13) && (wisValue <= 15)){
+        wisValue --;
+        document.getElementById("wisResult").innerHTML = wisValue;
         pointTotal += 2;
         document.getElementById("pointsCounter").innerHTML = pointTotal;
     }
@@ -245,7 +245,7 @@ wisRight.addEventListener('click', () => {
         pointTotal --;
         document.getElementById("pointsCounter").innerHTML = pointTotal;
       }
-      else if ((wisValue >= 13) && (wisValue < 15)){
+      else if ((wisValue >= 13) && (wisValue < 15) && (pointTotal >= 2)){
         wisValue ++;
         document.getElementById("wisResult").innerHTML = wisValue;
         pointTotal -= 2;
@@ -280,7 +280,7 @@ chaRight.addEventListener('click', () => {
         pointTotal --;
         document.getElementById("pointsCounter").innerHTML = pointTotal;
       }
-      else if ((chaValue >= 13) && (chaValue < 15)){
+      else if ((chaValue >= 13) && (chaValue < 15) && (pointTotal >= 2)){
         chaValue ++;
         document.getElementById("chaResult").innerHTML = chaValue;
         pointTotal -= 2;
