@@ -5,7 +5,7 @@ const raceButton = document.getElementById("raceButton");
 const abilitiesButton = document.getElementById("abilitiesButton");
 const charactersheetButton = document.getElementById("charactersheetButton");
 
-/* Const Back/Continue Buttons */
+// Const Back/Continue Buttons 
 const heroButton = document.getElementById("heroButton");
 const heroBack = document.getElementById("heroBack")
 const raceContinue = document.getElementById("raceContinue");
@@ -14,7 +14,7 @@ const abilitiesContinue = document.getElementById("abilitiesContinue")
 const raceBack = document.getElementById("raceBack");
 const charactersheetContinue = document.getElementById("charactersheetContinue");
 
-/* Const Sections */
+// Const Sections
 const navbarSection = document.getElementById("navbarSection");
 const heroSection = document.getElementById("heroSection");
 const classSection = document.getElementById("classSection");
@@ -22,25 +22,24 @@ const raceSection = document.getElementById("raceSection");
 const abilitiesSection = document.getElementById("abilitiesSection");
 const charactersheetSection = document.getElementById("charactersheetSection");
 
-/*Character Selection Array*/
+//Character Selection Array for stored character data
 
 const characterSelections = [];
 
-/* Race Selection Consts */
+// Race Selection Consts 
 
 const elfButton = document.getElementById("elfButton");
 const dwarfButton = document.getElementById("dwarfButton");
 const gnomeButton = document.getElementById("gnomeButton");
 
-/* Class Selection Consts */
+// Class Selection Consts for user selection
 
 const rogueButton = document.getElementById("rogueButton");
 const fighterButton = document.getElementById("fighterButton");
 const wizardButton = document.getElementById("wizardButton");
 
-/* Class Selection Event Listeners */
+// Class Selection Event Listeners
 
-//Add a way to only add 'classSelected' to the chosen class//
 
 rogueButton.addEventListener('click', () => {
     rogueButton.classList.add('classSelected');
@@ -66,7 +65,7 @@ wizardButton.addEventListener('click', () => {
     raceContinue.classList.add('continueButtonSelected');
 })
 
-/* Race Selection Event Listeners */
+// Race Selection Event Listeners
 
 elfButton.addEventListener('click', () => {
     elfButton.classList.add('classSelected');
@@ -88,36 +87,101 @@ gnomeButton.addEventListener('click', () => {
 
 // Class Info Popups
 
-let classPop = document.getElementById("classInfoPopup");
-let racePop = document.getElementById("raceInfoPopup");
-let roguePop = document.getElementById("rogueInfoPopup");
-let fighterPop = document.getElementById("fighterInfoPopup")
-let wizardPop = document.getElementById("wizardInfoPopup")
-
+//Maybe hover info popups instead of toggle?
 
 classPopup.addEventListener('click', () => {
     classInfoPopup.classList.toggle('hidden');
-    classPop.classList.toggle('')
+   
 })
 
 racePopup.addEventListener('click', () => {
     raceInfoPopup.classList.toggle('hidden');
-    racePop.classList.toggle('')
+})
+
+abilitiesPopup.addEventListener('click', () => {
+    abilitiesInfoPopup.classList.toggle('hidden');
 })
 
 roguePopup.addEventListener('click', () => {
     rogueInfoPopup.classList.toggle('hidden');
-    roguePop.classList.toggle('')
+   
 })
 
 fighterPopup.addEventListener('click', () => {
     fighterInfoPopup.classList.toggle('hidden');
-    fighterPop.classList.toggle('')
+    
 })
 
 wizardPopup.addEventListener('click', () => {
     wizardInfoPopup.classList.toggle('hidden');
-    wizardPop.classList.toggle('')
+   
+})
+
+roguePrimaryAbilityPopup.addEventListener('click', () => {
+    roguePrimaryAbilityInfoPopup.classList.toggle('hidden');
+    
+})
+
+fighterPrimaryAbilityPopup.addEventListener('click', () => {
+    fighterPrimaryAbilityInfoPopup.classList.toggle('hidden');
+    
+})
+
+wizardPrimaryAbilityPopup.addEventListener('click', () => {
+    wizardPrimaryAbilityInfoPopup.classList.toggle('hidden');
+   
+})
+
+elfPopup.addEventListener('click', () =>{
+    elfInfoPopup.classList.toggle('hidden');
+})
+
+dwarfPopup.addEventListener('click', () =>{
+    dwarfInfoPopup.classList.toggle('hidden');
+})
+
+gnomePopup.addEventListener('click', () =>{
+    gnomeInfoPopup.classList.toggle('hidden');
+})
+
+abilitiesStrPopup.addEventListener('click', () =>{
+    abilitiesStrInfoPopup.classList.toggle('hidden');
+})
+
+abilitiesDexPopup.addEventListener('click', () =>{
+    abilitiesDexInfoPopup.classList.toggle('hidden');
+})
+
+abilitiesConPopup.addEventListener('click', () =>{
+    abilitiesConInfoPopup.classList.toggle('hidden');
+})
+
+abilitiesIntPopup.addEventListener('click', () =>{
+    abilitiesIntInfoPopup.classList.toggle('hidden');
+})
+
+abilitiesWisPopup.addEventListener('click', () =>{
+    abilitiesWisInfoPopup.classList.toggle('hidden');
+})
+
+abilitiesChaPopup.addEventListener('click', () =>{
+    abilitiesChaInfoPopup.classList.toggle('hidden');
+})
+
+elfBonusPopup.addEventListener('click', () =>{
+    elfBonusInfoPopup.classList.toggle('hidden');
+})
+
+dwarfBonusPopup.addEventListener('click', () =>{
+    dwarfBonusInfoPopup.classList.toggle('hidden');
+})
+
+gnomeBonusPopup.addEventListener('click', () =>{
+    gnomeBonusInfoPopup.classList.toggle('hidden');
+})
+
+pointsPopup.addEventListener('click', () =>{
+    pointsInfoPopup.classList.toggle('hidden');
 })
 
 // Abilities Selection Consts 
@@ -441,6 +505,3 @@ charactersheetContinue.addEventListener('click', () => {
 
     }
 })
-
-
-

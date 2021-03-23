@@ -145,7 +145,11 @@ p{
     border-radius: 15px;
     padding: 10px;
     width: 220px;
-    height: 45px;
+    height: 60px;
+  }
+
+  .popupStyling1{
+    left: 220px;
   }
 
   /* Button Styling Section */
@@ -323,5 +327,3 @@ padding-bottom: 50px;
 .hidden{
   display: none;
 }
-
-

@@ -57,8 +57,8 @@
                             <img src="img/banner.png" width="100%">
                             <div class="sectioninfowrapper">
                                 <p>Primary Ability</p>
-                                <img src="img/infoicon1.png" id="primaryAbilityRogue" class="infoiconwrapper1 primaryAbilityPopup">
-                                <span class="hidden primaryAbilityInfoPopup">You're the best at this skill.</span>
+                                <img src="img/infoicon1.png" class="infoiconwrapper1" id="roguePrimaryAbilityPopup">
+                                <span class="hidden popupStyling" id="roguePrimaryAbilityInfoPopup">You're naturally light on your feet.</span>
                             </div>
                             <p class="classinfo">Dexterity</p>
                         </div>
@@ -76,8 +76,8 @@
                             <img src="img/banner.png" width="100%">
                             <div class="sectioninfowrapper">
                                 <p>Primary Ability</p>
-                                <img src="img/infoicon1.png" id="primaryAbilityFighter" class="infoiconwrapper1 primaryAbilityPopup">
-                                <span class="hidden primaryAbilityInfoPopup">You're the best at this skill.</span>
+                                <img src="img/infoicon1.png" class="infoiconwrapper1" id="fighterPrimaryAbilityPopup">
+                                <span class="hidden popupStyling" id="fighterPrimaryAbilityInfoPopup">You're skilled at combat so you are a heavy hitter.</span>
                             </div>
                             <p class="classinfo">Strength</p>
                         </div>
@@ -95,8 +95,8 @@
                             <img src="img/banner.png" width="100%">
                             <div class="sectioninfowrapper">
                                 <p>Primary Ability</p>
-                                <img src="img/infoicon1.png" id="primaryAbilityWizard" class="infoiconwrapper1 primaryAbilityPopup">
-                                <span class="hidden primaryAbilityInfoPopup">You're the best at this skill.</span>
+                                <img src="img/infoicon1.png" class="infoiconwrapper1" id="wizardPrimaryAbilityPopup">
+                                <span class="hidden popupStyling" id="wizardPrimaryAbilityInfoPopup">You are knowledgeable.</span>
                             </div>
                             <p class="classinfo">Intelligence</p>
                         </div>
@@ -127,12 +127,14 @@
                         <div>
                             <div class="sectioninfowrapper">
                                 <h3>ELF</h3>
-                                <img src="img/infoicon1.png" class="infoiconwrapper2">
+                                <img src="img/infoicon1.png" class="infoiconwrapper2" id="elfPopup">
+                                <span class="hidden popupStyling" id="elfInfoPopup">Elves are mystical.</span>
                             </div>
                             <img src="img/banner.png" width="100%">
                             <div class="sectioninfowrapper">
                                 <p>Ability Score Bonus</p>
-                                <img src="img/infoicon1.png" class="infoiconwrapper1">
+                                <img src="img/infoicon1.png" class="infoiconwrapper1" id="elfBonusPopup">
+                                <span class="hidden popupStyling" id="elfBonusInfoPopup">Elves are very agile so they gain a natural increase to dexterity skills.</span>
                             </div>
                             <p class="classinfo">+2 Dexterity</p>
                         </div>
@@ -144,12 +146,14 @@
                         <div>
                             <div class="sectioninfowrapper">
                                 <h3>DWARF</h3>
-                                <img src="img/infoicon1.png" class="infoiconwrapper1">
+                                <img src="img/infoicon1.png" class="infoiconwrapper1" id="dwarfPopup">
+                                <span class="hidden popupStyling" id="dwarfInfoPopup">Dwarves are proud and hearty folk.</span>
                             </div>
                             <img src="img/banner.png" width="100%">
                             <div class="sectioninfowrapper">
                                 <p>Ability Score Bonus</p>
-                                <img src="img/infoicon1.png" class="infoiconwrapper1">
+                                <img src="img/infoicon1.png" class="infoiconwrapper1" id="dwarfBonusPopup">
+                                <span class="hidden popupStyling" id="dwarfBonusInfoPopup">Dwarves are stout and tough.</span>
                             </div>
                             <p class="classinfo">+2 Constitution</p>
                         </div>
@@ -161,12 +165,14 @@
                         <div>
                             <div class="sectioninfowrapper">
                                 <h3>GNOME</h3>
-                                <img src="img/infoicon1.png" class="infoiconwrapper1">
+                                <img src="img/infoicon1.png" class="infoiconwrapper1" id="gnomePopup"> 
+                                <span class="hidden popupStyling" id="gnomeInfoPopup">Gnomes are intuitive and crafty.</span>
                             </div>
                             <img src="img/banner.png" width="100%">
                             <div class="sectioninfowrapper">
                                 <p>Ability Score Bonus</p>
-                                <img src="img/infoicon1.png" class="infoiconwrapper1">
+                                <img src="img/infoicon1.png" class="infoiconwrapper1" id="gnomeBonusPopup">
+                                <span class="hidden popupStyling" id="gnomeBonusInfoPopup">Gnomes are very keen so they can learn faster and pick up on the little things.</span>
                             </div>
                             <p class="classinfo">+2 Intelligence</p>
                         </div>
@@ -184,13 +190,15 @@
             <div class="flexvertical">
                 <div class="sectioninfowrapper">
                     <h2 class="fontheader flex">ABILITIES</h2>
-                    <img src="img/infoicon.png" class="infoiconwrapper">
+                    <img src="img/infoicon.png" class="infoiconwrapper" id="abilitiesPopup">
+                    <span class="hidden popupStyling popupStyling1" id="abilitiesInfoPopup">Abilities are your physical and mental characteristics.</span>
                 </div>
             </div>
             <div class="container flexvertical">
                 <div class="sectioninfowrapper">
                     <p>POINTS REMAINING</p>
-                    <img src="img/infoicon.png" class="infoiconwrapper1">
+                    <img src="img/infoicon.png" class="infoiconwrapper1" id="pointsPopup">
+                    <span class="hidden popupStyling" id="pointsInfoPopup">How many points you have to distribute amongst all attributes. Going from 9-13 costs 1 point and from 13>14 and 14>15 costs 2 points.</span>
                 </div>
                 <img src="img/banner.png" width="200px">
                 <div class="flex">
@@ -202,7 +210,8 @@
                         <div class="flexbetween">
                             <div class="sectioninfowrapper alignabilitysheet">
                                 <h4>Strength</h4>
-                                <img src="img/infoicon1.png" class="infoiconwrapper3">
+                                <img src="img/infoicon1.png" class="infoiconwrapper3" id="abilitiesStrPopup">
+                                <span class="hidden popupStyling" id="abilitiesStrInfoPopup">How strong you are.</span>
                             </div>
                             <div class="flex">
                                 <button id="strLeft" class="abilitiesLeft"></button>                            
@@ -213,7 +222,8 @@
                         <div class="flexbetween">
                             <div class="sectioninfowrapper alignabilitysheet">
                                 <h4>Dexterity</h4>
-                                <img src="img/infoicon1.png" class="infoiconwrapper3">
+                                <img src="img/infoicon1.png" class="infoiconwrapper3" id="abilitiesDexPopup">
+                                <span class="hidden popupStyling" id="abilitiesDexInfoPopup">How agile you are.</span>
                             </div>
                             <div class="flex">
                                 <button id="dexLeft" class="abilitiesLeft"></button>  
@@ -224,7 +234,8 @@
                         <div class="flexbetween">
                             <div class="sectioninfowrapper">
                                 <h4>Constitution</h4>
-                                <img src="img/infoicon1.png" class="infoiconwrapper3">
+                                <img src="img/infoicon1.png" class="infoiconwrapper3" id="abilitiesConPopup">
+                                <span class="hidden popupStyling" id="abilitiesConInfoPopup">How hearty and healthy you are.</span>
                             </div>
                             <div class="flex">
                                 <button id="conLeft" class="abilitiesLeft"></button>
@@ -237,7 +248,8 @@
                         <div class="flexbetween">
                             <div class="sectioninfowrapper alignabilitysheet">
                                 <h4>Intelligence</h4>
-                                <img src="img/infoicon1.png" class="infoiconwrapper3">
+                                <img src="img/infoicon1.png" class="infoiconwrapper3" id="abilitiesIntPopup">
+                                <span class="hidden popupStyling" id="abilitiesIntInfoPopup">Your knowledge of wordly events and attention to detail.</span>
                             </div>
                             <div class="flex">
                                 <button id="intLeft" class="abilitiesLeft"></button>
@@ -248,7 +260,8 @@
                         <div class="flexbetween">
                             <div class="sectioninfowrapper alignabilitysheet">
                                 <h4>Wisdom</h4>
-                                <img src="img/infoicon1.png" class="infoiconwrapper3">
+                                <img src="img/infoicon1.png" class="infoiconwrapper3" id="abilitiesWisPopup">
+                                <span class="hidden popupStyling" id="abilitiesWisInfoPopup">Street smarts!</span>
                             </div>
                             <div class="flex">
                                 <button id="wisLeft" class="abilitiesLeft"></button>
@@ -259,7 +272,8 @@
                         <div class="flexbetween">
                             <div class="sectioninfowrapper alignabilitysheet">
                                 <h4>Charisma</h4>
-                                <img src="img/infoicon1.png" class="infoiconwrapper3">
+                                <img src="img/infoicon1.png" class="infoiconwrapper3" id="abilitiesChaPopup">
+                                <span class="hidden popupStyling" id="abilitiesChaInfoPopup">Your communication skills and ability to win others over.</span>
                             </div>
                             <div class="flex">
                                 <button id="chaLeft" class="abilitiesLeft"></button>
