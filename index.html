@@ -33,13 +33,16 @@
                     <button class="button" id="heroButton">Venture Forward</button>
                 </div>
             </div>
-        </section>
+        </section> 
 
-        <section id="classSection" class="hidden">
+        <section id="classSection" class="hidden sectionPadding">
             <div class="flexvertical">
                 <div class="sectioninfowrapper">
                     <h2 class="fontheader flex">CLASS</h2>
-                    <img src="img/infoicon.png" class="infoiconwrapper" id="classHeaderInfo">
+                    <div>
+                        <img src="img/infoicon.png" class="infoiconwrapper" id="classPopup">
+                        <span class="hidden popupStyling" id="classInfoPopup">Class shapes how you view the world and how you interact with it.</span>
+                    </div>
                 </div>
             </div>
             <div class="container flex">
@@ -48,20 +51,16 @@
                         <div class="classselection">
                             <div class="sectioninfowrapper">
                                 <h3>ROGUE</h3>
-                                <img src="img/infoicon1.png" class="infoiconwrapper2">
+                                <img src="img/infoicon1.png" class="infoiconwrapper2" id="roguePopup">
+                                <span class="hidden popupStyling" id="rogueInfoPopup">Rogues are real sneaky.</span>
                             </div>
                             <img src="img/banner.png" width="100%">
                             <div class="sectioninfowrapper">
                                 <p>Primary Ability</p>
-                                <img src="img/infoicon1.png" class="infoiconwrapper1">
+                                <img src="img/infoicon1.png" id="primaryAbilityRogue" class="infoiconwrapper1 primaryAbilityPopup">
+                                <span class="hidden primaryAbilityInfoPopup">You're the best at this skill.</span>
                             </div>
                             <p class="classinfo">Dexterity</p>
-                            <br>
-                            <div class="sectioninfowrapper">
-                                <p>Saving Throws</p>
-                                <img src="img/infoicon1.png" class="infoiconwrapper1">
-                            </div>
-                            <p class="classinfo">Dexterity & Intelligence</p>
                         </div>
                         <img src="img/rogue.png" alt="rogue">
                     </button>
@@ -71,20 +70,16 @@
                         <div class="classselection">
                             <div class="sectioninfowrapper">
                                 <h3>FIGHTER</h3>
-                                <img src="img/infoicon1.png" class="infoiconwrapper1">
+                                <img src="img/infoicon1.png" class="infoiconwrapper1" id="fighterPopup">
+                                <span class="hidden popupStyling" id="fighterInfoPopup">Fighters learn the basics of all combat styles.</span>
                             </div>
                             <img src="img/banner.png" width="100%">
                             <div class="sectioninfowrapper">
                                 <p>Primary Ability</p>
-                                <img src="img/infoicon1.png" class="infoiconwrapper1">
+                                <img src="img/infoicon1.png" id="primaryAbilityFighter" class="infoiconwrapper1 primaryAbilityPopup">
+                                <span class="hidden primaryAbilityInfoPopup">You're the best at this skill.</span>
                             </div>
                             <p class="classinfo">Strength</p>
-                            <br>
-                            <div class="sectioninfowrapper">
-                                <p>Saving Throws</p>
-                                <img src="img/infoicon1.png" class="infoiconwrapper1">
-                            </div>
-                            <p class="classinfo">Strength & Constitution</p>
                         </div>
                         <img src="img/fighter.png">
                     </a>
@@ -94,20 +89,16 @@
                         <div class="classselection">
                             <div class="sectioninfowrapper">
                                 <h3>WIZARD</h3>
-                                <img src="img/infoicon1.png" class="infoiconwrapper1">
+                                <img src="img/infoicon1.png" class="infoiconwrapper1" id="wizardPopup">
+                                <span class="hidden popupStyling" id="wizardInfoPopup">Wizards are squishy.</span>
                             </div>
                             <img src="img/banner.png" width="100%">
                             <div class="sectioninfowrapper">
                                 <p>Primary Ability</p>
-                                <img src="img/infoicon1.png" class="infoiconwrapper1">
+                                <img src="img/infoicon1.png" id="primaryAbilityWizard" class="infoiconwrapper1 primaryAbilityPopup">
+                                <span class="hidden primaryAbilityInfoPopup">You're the best at this skill.</span>
                             </div>
                             <p class="classinfo">Intelligence</p>
-                            <br>
-                            <div class="sectioninfowrapper">
-                                <p>Saving Throws</p>
-                                <img src="img/infoicon1.png" class="infoiconwrapper1">
-                            </div>
-                            <p class="classinfo">Intelligence & Wisdom</p>
                         </div>
                         <img src="img/wizard2.png" id="wizard">
                     </button>
@@ -119,17 +110,21 @@
             </div>
         </section>
 
-        <section id="raceSection" class="hidden">
+
+        <section id="raceSection" class="hidden sectionPadding">
             <div class="flexvertical">
                 <div class="sectioninfowrapper">
                     <h2 class="fontheader flex">RACE</h2>
-                    <img src="img/infoicon.png" class="infoiconwrapper">
+                    <div>
+                        <img src="img/infoicon.png" class="infoiconwrapper" id="racePopup">
+                        <span class="hidden popupStyling" id="raceInfoPopup">Race is your lineage and genetics.</span>
+                    </div>
                 </div>
             </div>
             <div class="container flex">
                 <div class="characterChoices" id="elf">
                     <button id="elfButton" class="flex optionBackground raceChoice">
-                        <div class="classselection">
+                        <div>
                             <div class="sectioninfowrapper">
                                 <h3>ELF</h3>
                                 <img src="img/infoicon1.png" class="infoiconwrapper2">
@@ -140,19 +135,13 @@
                                 <img src="img/infoicon1.png" class="infoiconwrapper1">
                             </div>
                             <p class="classinfo">+2 Dexterity</p>
-                            <br>
-                            <div class="sectioninfowrapper">
-                                <p>Languages</p>
-                                <img src="img/infoicon1.png" class="infoiconwrapper1">
-                            </div>
-                            <p class="classinfo">Common & Elvish</p>
                         </div>
                         <img src="img/elff.png" id="elf">
                     </button>
                 </div>
-                <div class="characterChoices" id="elf">
+                <div class="characterChoices" id="dwarf">
                     <button id="dwarfButton" class="flex optionBackground raceChoice">
-                        <div class="classselection">
+                        <div>
                             <div class="sectioninfowrapper">
                                 <h3>DWARF</h3>
                                 <img src="img/infoicon1.png" class="infoiconwrapper1">
@@ -163,19 +152,13 @@
                                 <img src="img/infoicon1.png" class="infoiconwrapper1">
                             </div>
                             <p class="classinfo">+2 Constitution</p>
-                            <br>
-                            <div class="sectioninfowrapper">
-                                <p>Languages</p>
-                                <img src="img/infoicon1.png" class="infoiconwrapper1">
-                            </div>
-                            <p class="classinfo">Common & Dwarvish</p>
                         </div>
                         <img src="img/dwarf.png" id="dwarf">
                     </button>
                 </div>
-                <div class="characterChoices" id="elf">
+                <div class="characterChoices" id="gnome">
                     <button id="gnomeButton" class="flex optionBackground raceChoice">
-                        <div class="classselection">
+                        <div>
                             <div class="sectioninfowrapper">
                                 <h3>GNOME</h3>
                                 <img src="img/infoicon1.png" class="infoiconwrapper1">
@@ -186,12 +169,6 @@
                                 <img src="img/infoicon1.png" class="infoiconwrapper1">
                             </div>
                             <p class="classinfo">+2 Intelligence</p>
-                            <br>
-                            <div class="sectioninfowrapper">
-                                <p>Languages</p>
-                                <img src="img/infoicon1.png" class="infoiconwrapper1">
-                            </div>
-                            <p class="classinfo">Common & Gnomish</p>
                         </div>
                         <img src="img/gnome.png" id="gnome">
                     </a>
@@ -203,7 +180,7 @@
             </div>
         </section>
 
-        <section id="abilitiesSection" class="hidden">
+        <section id="abilitiesSection" class="hidden sectionPadding">
             <div class="flexvertical">
                 <div class="sectioninfowrapper">
                     <h2 class="fontheader flex">ABILITIES</h2>
@@ -305,65 +282,61 @@
                 <img class="righttopcorner" src="img/charactersheetborder.png">
                 <img class="leftbottomcorner" src="img/charactersheetborder.png">
                 <img class="rightbottomcorner" src="img/charactersheetborder.png">
-                <div class="flex">
+                <div class="flex sectionPadding">
                     <input value="Name Here" type="text" class="characterName">
-                    <img src="img/pencil.png" width="15px">
                 </div>
                 <div class="flex2">
-                    <div class="flexbetween">
+                    <div class="flexbetween1">
                         <div class="flex">
-                            <p>Race</p> 
+                            <p>Race:</p><p id="RaceCS" class="csStyling"></p>
                         </div>
                         <div class="flex">
-                            <p>Primary Abilities</p>
+                            <p>Class:</p><p id="classCS" class="csStyling"></p>
                         </div>
                     </div>
-                    <div class="flexbetween">
+                    <div class="flex">
                         <div class="flex">
-                            <p>Class</p>
-                        </div>
-                        <div class="flex">
-                            <p>Saving Throws</p>
+                            <p>Primary Ability:</p><p id="primaryAbilityCS" class="csStyling"></p>
                         </div>
                     </div>
                 </div>
                 <div class="flex">
-                    <div class="ability">
+                    <div class="abilityFinal">
                         <p>STR</p>
                         <div class="charactersheet flex">
-                            <p>15</p>
+                            <p id="strAbilityCS">8</p>
                         </div>
                     </div>
-                    <div class="ability">
+                    <div class="abilityFinal">
                         <p>DEX</p>
                         <div class="charactersheet flex">
-                            <p>8</p>
+                            <p id="dexAbilityCS">8</p>
                         </div>
                     </div>
-                    <div class="ability">
+                    <div class="abilityFinal">
                         <p>CON</p>
                         <div class="charactersheet flex">
-                            <p>15</p>
+                            <p id="conAbilityCS">8</p>
                         </div>
                     </div>
                 </div>
                 <div class="flex">
-                    <div class="ability">
+                    <div class="abilityFinal">
                         <p>INT</p>
                         <div class="charactersheet flex">
-                            <p>15</p>
+                            <p id="intAbilityCS">8</p>
                         </div>
                     </div>
-                    <div class="ability">
+                    <div class="abilityFinal">
                         <p>WIS</p>
                         <div class="charactersheet flex">
-                            <p>15</p>
+                            <p id="wisAbilityCS">8</p>
                         </div>
                     </div>
-                    <div class="ability">
+                    <div class="abilityFinal">
                         <p>CHA</p>
                         <div class="charactersheet flex">
-                            <p>15</p>
+                            <p id="chaAbilityCS">8</p>
                         </div>
                     </div>
                 </div>

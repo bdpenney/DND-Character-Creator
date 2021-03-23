@@ -40,22 +40,30 @@ const wizardButton = document.getElementById("wizardButton");
 
 /* Class Selection Event Listeners */
 
-
 //Add a way to only add 'classSelected' to the chosen class//
 
 rogueButton.addEventListener('click', () => {
     rogueButton.classList.add('classSelected');
     characterSelections[0] = 'Rogue';
+    characterSelections[8] = 'Dexterity';
+    document.getElementById("primaryAbilityCS").innerHTML = characterSelections[8];
+    raceContinue.classList.add('continueButtonSelected');
 })
 
 fighterButton.addEventListener('click', () => {
     fighterButton.classList.add('classSelected');
-    characterSelections[0] = "Fighter";
+    characterSelections[0] = 'Fighter';
+    characterSelections[8] = 'Strength';
+    document.getElementById("primaryAbilityCS").innerHTML = characterSelections[8];
+    raceContinue.classList.add('continueButtonSelected');
 })
 
 wizardButton.addEventListener('click', () => {
     wizardButton.classList.add('classSelected');
     characterSelections[0] = 'Wizard';
+    characterSelections[8] = 'Intelligence';
+    document.getElementById("primaryAbilityCS").innerHTML = characterSelections[8];
+    raceContinue.classList.add('continueButtonSelected');
 })
 
 /* Race Selection Event Listeners */
@@ -63,16 +71,53 @@ wizardButton.addEventListener('click', () => {
 elfButton.addEventListener('click', () => {
     elfButton.classList.add('classSelected');
     characterSelections[1] = 'Elf';
+    abilitiesContinue.classList.add('continueButtonSelected');
 })
 
 dwarfButton.addEventListener('click', () => {
     dwarfButton.classList.add('classSelected');
     characterSelections[1] = 'Dwarf';
+    abilitiesContinue.classList.add('continueButtonSelected');
 })
 
 gnomeButton.addEventListener('click', () => {
     gnomeButton.classList.add('classSelected');
     characterSelections[1] = 'Gnome';
+    abilitiesContinue.classList.add('continueButtonSelected');
+})
+
+// Class Info Popups
+
+let classPop = document.getElementById("classInfoPopup");
+let racePop = document.getElementById("raceInfoPopup");
+let roguePop = document.getElementById("rogueInfoPopup");
+let fighterPop = document.getElementById("fighterInfoPopup")
+let wizardPop = document.getElementById("wizardInfoPopup")
+
+
+classPopup.addEventListener('click', () => {
+    classInfoPopup.classList.toggle('hidden');
+    classPop.classList.toggle('')
+})
+
+racePopup.addEventListener('click', () => {
+    raceInfoPopup.classList.toggle('hidden');
+    racePop.classList.toggle('')
+})
+
+roguePopup.addEventListener('click', () => {
+    rogueInfoPopup.classList.toggle('hidden');
+    roguePop.classList.toggle('')
+})
+
+fighterPopup.addEventListener('click', () => {
+    fighterInfoPopup.classList.toggle('hidden');
+    fighterPop.classList.toggle('')
+})
+
+wizardPopup.addEventListener('click', () => {
+    wizardInfoPopup.classList.toggle('hidden');
+    wizardPop.classList.toggle('')
 })
 
 // Abilities Selection Consts 
@@ -81,6 +126,8 @@ const strLeft = document.getElementById("strLeft");
 const strRight = document.getElementById("strRight");
 
 let strValue = 8; 
+
+// Ability Score Counter Functions
 
 strLeft.addEventListener('click', () => {
     if((strValue > 8) && (strValue <= 13)){
@@ -98,7 +145,7 @@ strLeft.addEventListener('click', () => {
 })
 
 strRight.addEventListener('click', () => {
-    if(strValue < 13 ){
+    if((strValue < 13) && (pointTotal > 0)){
         strValue ++; 
         document.getElementById("strResult").innerHTML = strValue;
         pointTotal --;
@@ -133,7 +180,7 @@ dexLeft.addEventListener('click', () => {
 })
 
 dexRight.addEventListener('click', () => {
-    if(dexValue < 13 ){
+    if((dexValue < 13 ) && (pointTotal > 0)){
         dexValue ++; 
         document.getElementById("dexResult").innerHTML = dexValue;
         pointTotal --;
@@ -168,7 +215,7 @@ conLeft.addEventListener('click', () => {
 })
 
 conRight.addEventListener('click', () => {
-    if(conValue < 13 ){
+    if((conValue < 13 ) && (pointTotal > 0)){
         conValue ++; 
         document.getElementById("conResult").innerHTML = conValue;
         pointTotal --;
@@ -204,7 +251,7 @@ intLeft.addEventListener('click', () => {
 })
 
 intRight.addEventListener('click', () => {
-    if(intValue < 13 ){
+    if((intValue < 13) && (pointTotal > 0)){
         intValue ++; 
         document.getElementById("intResult").innerHTML = intValue;
         pointTotal --;
@@ -239,7 +286,7 @@ wisLeft.addEventListener('click', () => {
 })
 
 wisRight.addEventListener('click', () => {
-    if(wisValue < 13 ){
+    if((wisValue < 13) && (pointTotal > 0)){
         wisValue ++; 
         document.getElementById("wisResult").innerHTML = wisValue;
         pointTotal --;
@@ -274,7 +321,7 @@ chaLeft.addEventListener('click', () => {
 })
 
 chaRight.addEventListener('click', () => {
-    if(chaValue < 13 ){
+    if((chaValue < 13) && (pointTotal > 0)){
         chaValue ++; 
         document.getElementById("chaResult").innerHTML = chaValue;
         pointTotal --;
@@ -337,6 +384,7 @@ heroButton.addEventListener('click', () => {
     classSection.classList.remove('hidden');
     heroSection.classList.add('hidden');
     navbarSection.classList.remove('hidden');
+    document.getElementById("classCS").innerHTML = characterSelections[0];
 })
 
 heroBack.addEventListener('click', () => {
@@ -348,6 +396,7 @@ heroBack.addEventListener('click', () => {
 raceContinue.addEventListener('click', () => {
     raceSection.classList.remove('hidden');
     classSection.classList.add('hidden');
+    document.getElementById("RaceCS").innerHTML = characterSelections[1];
 })
 
 classBack.addEventListener('click', () => {
@@ -365,6 +414,12 @@ raceBack.addEventListener('click', () => {
     abilitiesSection.classList.add('hidden');
 })
 
+let RaceCS = document.getElementById("RaceCS");
+let classCS = document.getElementById("classCS");
+let strAbilityCS = document.getElementById("strAbilityCS");
+let dexAbilityCS = document.getElementById("dexAbilityCS");
+let conAbilityCS = document.getElementById("conAbilityCS");
+
 charactersheetContinue.addEventListener('click', () => {
     charactersheetSection.classList.remove('hidden');
     abilitiesSection.classList.add('hidden');
@@ -374,6 +429,17 @@ charactersheetContinue.addEventListener('click', () => {
     characterSelections[5] = intValue;
     characterSelections[6] = wisValue;
     characterSelections[7] = chaValue;
+
+    document.getElementById("classCS").innerHTML = characterSelections[0];
+    document.getElementById("RaceCS").innerHTML = characterSelections[1];
+    document.getElementById("strAbilityCS").innerHTML = characterSelections[2]
+    document.getElementById("wisAbilityCS").innerHTML = characterSelections[6]
+    document.getElementById("chaAbilityCS").innerHTML = characterSelections[7]
+
+    //Race Bonus Scores
+    switch (abilityBonus){
+
+    }
 })
 
 

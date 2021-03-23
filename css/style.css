@@ -34,7 +34,13 @@ body{
 }
 
 .flexbetween{
-  width: 300px;
+  width: 250px;
+  display:flex;
+  justify-content: space-between;
+}
+
+.flexbetween1{
+  width: 400px;
   display:flex;
   justify-content: space-between;
 }
@@ -56,7 +62,7 @@ h1{
 }
 
 h2{
-  font-size: 45px;
+  font-size: 40px;
   font-family: 'Crimson Text', serif;
   margin: 0;
   padding-bottom: 20px;
@@ -106,9 +112,9 @@ p{
   }
 
   .infoiconwrapper{
-      position: absolute;
-      top: 0px;
-      right: -35px;
+    position: absolute;
+    top: 0px;
+    right: -35px;
   }
 
   .infoiconwrapper1{
@@ -120,13 +126,26 @@ p{
   .infoiconwrapper2{
     position: absolute;
     top: -8px;
-    right: -5px;
+    right: 0px;
   }
 
   .infoiconwrapper3{
     position: absolute;
     top: 0px;
     right: -20px;
+  }
+
+  .popupStyling{
+    font-size: 14px;
+    text-align: center;
+    position: absolute;
+    top: -10px;
+    left: 160px;
+    background-color:#BE9442;
+    border-radius: 15px;
+    padding: 10px;
+    width: 220px;
+    height: 45px;
   }
 
   /* Button Styling Section */
@@ -185,10 +204,6 @@ p{
 
   /* Class Section */
 
-  .classselection{
-    padding-right: 16px;
-  }
-
   .classinfo{
       font-size: 14px;
   }
@@ -197,6 +212,14 @@ p{
 
   .continueButton{
     opacity: 0.5;
+  }
+
+  .continueButtonSelected{
+    opacity: 1;
+  }
+
+  #RaceCS{
+    padding-left: 10px;
   }
 
   /* Ability Scores Section */
@@ -215,6 +238,11 @@ p{
 
 /* Character Sheet Section */
 
+.sectionPadding{
+padding-top: 50px;
+padding-bottom: 50px;
+}
+
 .charactersheet{
   background-image: url('../img/asicon.png');
   background-size: contain;
@@ -231,7 +259,9 @@ p{
   background-color: black;
   color:cornsilk;
   font-family: 'Barlow', sans-serif;
+  text-align: center;
   font-size: 16px;
+  width: 250px;
 }
 
 .editIconWrapper{
@@ -279,8 +309,13 @@ p{
   top: 582px;
 }
 
-.ability{
+.abilityFinal{
   padding: 10px;
+}
+
+.csStyling{
+  padding-left: 10px;
+  font-size: 14px;
 }
 
 /* JS CSS */
