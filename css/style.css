@@ -152,6 +152,12 @@ p{
     left: 220px;
   }
 
+  .popupStyling2{
+    width: 180px;
+    height: 40px;
+    left: 150px;
+  }
+
   /* Button Styling Section */
 
   .button{
@@ -173,17 +179,17 @@ p{
     border: none;
    }
 
-.characterChoices:hover {
-    opacity: 1; }
+.hoverEffect:hover{
+    opacity: 1; 
+  }
   
-  .characterChoices{
+.characterChoices{
   opacity: 50%;
   transition: 0.3s;
   }
 
   .characterSelected{
-    opacity: 100%;
-    transition: 0.2s;
+    opacity: 1;
   }
 
   .abilitiesLeft{
@@ -265,7 +271,7 @@ padding-bottom: 50px;
   font-family: 'Barlow', sans-serif;
   text-align: center;
   font-size: 16px;
-  width: 250px;
+  width: 220px;
 }
 
 .editIconWrapper{

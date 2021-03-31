@@ -42,7 +42,8 @@ const wizardButton = document.getElementById("wizardButton");
 
 
 rogueButton.addEventListener('click', () => {
-    rogueButton.classList.add('classSelected');
+    rogueButton.classList.remove('hoverEffect')
+    rogueButton.classList.add('classSelected')
     characterSelections[0] = 'Rogue';
     characterSelections[8] = 'Dexterity';
     document.getElementById("primaryAbilityCS").innerHTML = characterSelections[8];
@@ -426,6 +427,7 @@ raceButton.addEventListener('click', () => {
     classSection.classList.add('hidden');
     abilitiesSection.classList.add('hidden');
     charactersheetSection.classList.add('hidden');
+    document.getElementById("classCS").innerHTML = characterSelections[0];
 })
 
 abilitiesButton.addEventListener('click', () => {
@@ -433,6 +435,7 @@ abilitiesButton.addEventListener('click', () => {
     raceSection.classList.add('hidden');
     classSection.classList.add('hidden');
     charactersheetSection.classList.add('hidden');
+    document.getElementById("classCS").innerHTML = characterSelections[0];
 })
 
 charactersheetButton.addEventListener('click', () => {
@@ -440,6 +443,7 @@ charactersheetButton.addEventListener('click', () => {
     raceSection.classList.add('hidden');
     abilitiesSection.classList.add('hidden');
     classSection.classList.add('hidden');
+    document.getElementById("classCS").innerHTML = characterSelections[0];
 })
 
 /* Navigation Buttons */
@@ -483,6 +487,9 @@ let classCS = document.getElementById("classCS");
 let strAbilityCS = document.getElementById("strAbilityCS");
 let dexAbilityCS = document.getElementById("dexAbilityCS");
 let conAbilityCS = document.getElementById("conAbilityCS");
+let intAbilityCS = document.getElementById("intAbilityCS");
+let wisAbilityCS = document.getElementById("wisAbilityCS");
+let chaAbilityCS = document.getElementById("chaAbilityCS");
 
 charactersheetContinue.addEventListener('click', () => {
     charactersheetSection.classList.remove('hidden');
@@ -499,9 +506,4 @@ charactersheetContinue.addEventListener('click', () => {
     document.getElementById("strAbilityCS").innerHTML = characterSelections[2]
     document.getElementById("wisAbilityCS").innerHTML = characterSelections[6]
     document.getElementById("chaAbilityCS").innerHTML = characterSelections[7]
-
-    //Race Bonus Scores
-    switch (abilityBonus){
-
-    }
 })
