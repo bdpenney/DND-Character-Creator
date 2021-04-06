@@ -173,6 +173,11 @@ p{
     border: none;
   }
 
+  .button:focus{
+    outline: none;
+    border-color: transparent;
+  }
+
   .optionBackground{
     background-color: transparent;
     color: white;

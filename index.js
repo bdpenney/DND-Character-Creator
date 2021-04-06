@@ -42,48 +42,95 @@ const wizardButton = document.getElementById("wizardButton");
 
 
 rogueButton.addEventListener('click', () => {
-    rogueButton.classList.remove('hoverEffect')
-    rogueButton.classList.add('classSelected')
+    rogueButton.classList.remove('hoverEffect');
+    rogueButton.classList.remove('characterChoices');
+    rogueButton.classList.add('characterSelected');
     characterSelections[0] = 'Rogue';
     characterSelections[8] = 'Dexterity';
     document.getElementById("primaryAbilityCS").innerHTML = characterSelections[8];
     raceContinue.classList.add('continueButtonSelected');
+    fighterButton.classList.add('hoverEffect');
+    fighterButton.classList.add('characterChoices');
+    fighterButton.classList.remove('characterSelected');
+    wizardButton.classList.add('hoverEffect');
+    wizardButton.classList.add('characterChoices');
+    wizardButton.classList.remove('characterSelected');
 })
 
 fighterButton.addEventListener('click', () => {
-    fighterButton.classList.add('classSelected');
+    fighterButton.classList.remove('hoverEffect');
+    fighterButton.classList.remove('characterChoices');
+    fighterButton.classList.add('characterSelected');
     characterSelections[0] = 'Fighter';
     characterSelections[8] = 'Strength';
     document.getElementById("primaryAbilityCS").innerHTML = characterSelections[8];
     raceContinue.classList.add('continueButtonSelected');
+    wizardButton.classList.add('hoverEffect');
+    wizardButton.classList.add('characterChoices');
+    wizardButton.classList.remove('characterSelected');
+    rogueButton.classList.add('hoverEffect');
+    rogueButton.classList.add('characterChoices');
+    rogueButton.classList.remove('characterSelected');
 })
 
 wizardButton.addEventListener('click', () => {
-    wizardButton.classList.add('classSelected');
+    wizardButton.classList.remove('hoverEffect');
+    wizardButton.classList.remove('characterChoices');
+    wizardButton.classList.add('characterSelected');
     characterSelections[0] = 'Wizard';
     characterSelections[8] = 'Intelligence';
     document.getElementById("primaryAbilityCS").innerHTML = characterSelections[8];
     raceContinue.classList.add('continueButtonSelected');
+    rogueButton.classList.add('hoverEffect');
+    rogueButton.classList.add('characterChoices');
+    rogueButton.classList.remove('characterSelected');
+    fighterButton.classList.add('hoverEffect');
+    fighterButton.classList.add('characterChoices');
+    fighterButton.classList.remove('characterSelected');
 })
 
 // Race Selection Event Listeners
 
 elfButton.addEventListener('click', () => {
-    elfButton.classList.add('classSelected');
+    elfButton.classList.remove('hoverEffect');
+    elfButton.classList.remove('characterChoices');
+    elfButton.classList.add('characterSelected');
     characterSelections[1] = 'Elf';
     abilitiesContinue.classList.add('continueButtonSelected');
+    dwarfButton.classList.add('hoverEffect');
+    dwarfButton.classList.add('characterChoices');
+    dwarfButton.classList.remove('characterSelected');
+    gnomeButton.classList.add('hoverEffect');
+    gnomeButton.classList.add('characterChoices');
+    gnomeButton.classList.remove('characterSelected');
 })
 
 dwarfButton.addEventListener('click', () => {
-    dwarfButton.classList.add('classSelected');
+    dwarfButton.classList.remove('hoverEffect');
+    dwarfButton.classList.remove('characterChoices');
+    dwarfButton.classList.add('characterSelected');
     characterSelections[1] = 'Dwarf';
     abilitiesContinue.classList.add('continueButtonSelected');
+    elfButton.classList.add('hoverEffect');
+    elfButton.classList.add('characterChoices');
+    elfButton.classList.remove('characterSelected');
+    gnomeButton.classList.add('hoverEffect');
+    gnomeButton.classList.add('characterChoices');
+    gnomeButton.classList.remove('characterSelected');
 })
 
 gnomeButton.addEventListener('click', () => {
-    gnomeButton.classList.add('classSelected');
+    gnomeButton.classList.remove('hoverEffect');
+    gnomeButton.classList.remove('characterChoices');
+    gnomeButton.classList.add('characterSelected');
     characterSelections[1] = 'Gnome';
     abilitiesContinue.classList.add('continueButtonSelected');
+    elfButton.classList.add('hoverEffect');
+    elfButton.classList.add('characterChoices');
+    elfButton.classList.remove('characterSelected');
+    dwarfButton.classList.add('hoverEffect');
+    dwarfButton.classList.add('characterChoices');
+    dwarfButton.classList.remove('characterSelected');
 })
 
 // Class Info Popups
@@ -92,7 +139,6 @@ gnomeButton.addEventListener('click', () => {
 
 classPopup.addEventListener('click', () => {
     classInfoPopup.classList.toggle('hidden');
-   
 })
 
 racePopup.addEventListener('click', () => {
@@ -105,7 +151,7 @@ abilitiesPopup.addEventListener('click', () => {
 
 roguePopup.addEventListener('click', () => {
     rogueInfoPopup.classList.toggle('hidden');
-   
+    
 })
 
 fighterPopup.addEventListener('click', () => {
@@ -444,6 +490,23 @@ charactersheetButton.addEventListener('click', () => {
     abilitiesSection.classList.add('hidden');
     classSection.classList.add('hidden');
     document.getElementById("classCS").innerHTML = characterSelections[0];
+    document.getElementById("raceCS").innerHTML = characterSelections[1];
+
+    if (dwarfButton.classList.contains('characterSelected')){
+        document.getElementById("conAbilityCS").innerHTML = characterSelections[4] + 2;
+        document.getElementById("dexAbilityCS").innerHTML = characterSelections[3];
+        document.getElementById("intAbilityCS").innerHTML = characterSelections[5];
+    }
+    if (elfButton.classList.contains('characterSelected')){
+        document.getElementById("dexAbilityCS").innerHTML = characterSelections[3] + 2;
+        document.getElementById("conAbilityCS").innerHTML = characterSelections[4];
+        document.getElementById("intAbilityCS").innerHTML = characterSelections[5];
+    }
+    if (gnomeButton.classList.contains('characterSelected')){
+        document.getElementById("intAbilityCS").innerHTML = characterSelections[5] + 2;
+        document.getElementById("conAbilityCS").innerHTML = characterSelections[4];
+        document.getElementById("dexAbilityCS").innerHTML = characterSelections[3];
+    }
 })
 
 /* Navigation Buttons */
@@ -503,7 +566,23 @@ charactersheetContinue.addEventListener('click', () => {
 
     document.getElementById("classCS").innerHTML = characterSelections[0];
     document.getElementById("RaceCS").innerHTML = characterSelections[1];
-    document.getElementById("strAbilityCS").innerHTML = characterSelections[2]
-    document.getElementById("wisAbilityCS").innerHTML = characterSelections[6]
-    document.getElementById("chaAbilityCS").innerHTML = characterSelections[7]
+    document.getElementById("strAbilityCS").innerHTML = characterSelections[2];
+    document.getElementById("wisAbilityCS").innerHTML = characterSelections[6];
+    document.getElementById("chaAbilityCS").innerHTML = characterSelections[7];
+
+    if (dwarfButton.classList.contains('characterSelected')){
+        document.getElementById("conAbilityCS").innerHTML = characterSelections[4] + 2;
+        document.getElementById("dexAbilityCS").innerHTML = characterSelections[3];
+        document.getElementById("intAbilityCS").innerHTML = characterSelections[5];
+    }
+    if (elfButton.classList.contains('characterSelected')){
+        document.getElementById("dexAbilityCS").innerHTML = characterSelections[3] + 2;
+        document.getElementById("conAbilityCS").innerHTML = characterSelections[4];
+        document.getElementById("intAbilityCS").innerHTML = characterSelections[5];
+    }
+    if (gnomeButton.classList.contains('characterSelected')){
+        document.getElementById("intAbilityCS").innerHTML = characterSelections[5] + 2;
+        document.getElementById("conAbilityCS").innerHTML = characterSelections[4];
+        document.getElementById("dexAbilityCS").innerHTML = characterSelections[3];
+    }
 })
