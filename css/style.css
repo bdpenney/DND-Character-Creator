@@ -93,7 +93,7 @@ p{
 .hero{
   background-image: url('../img/homepage1.png');
   background-position: center;
-  background-size:cover; 
+  background-size: cover; 
   background-repeat: no-repeat;
   height: 100vh;
 }
@@ -115,24 +115,28 @@ p{
     position: absolute;
     top: 0px;
     right: -35px;
+    cursor: pointer;
   }
 
   .infoiconwrapper1{
     position: absolute;
     top: -8px;
     right: -10px;
+    cursor: pointer;
   }
 
   .infoiconwrapper2{
     position: absolute;
     top: -8px;
     right: 0px;
+    cursor: pointer;
   }
 
   .infoiconwrapper3{
     position: absolute;
     top: 0px;
     right: -20px;
+    cursor: pointer;
   }
 
   .popupStyling{
@@ -160,8 +164,13 @@ p{
 
   /* Button Styling Section */
 
+  button{
+    cursor: pointer;
+  }
+
   .button{
-    font-size: 15px;
+    font-size: 14px;
+    font-weight: bold;
     color:white;
     border: none;
     width: 150px;
@@ -170,12 +179,6 @@ p{
     background-color: transparent;
     background-repeat: no-repeat;
     background-size: contain;
-    border: none;
-  }
-
-  .button:focus{
-    outline: none;
-    border-color: transparent;
   }
 
   .optionBackground{
@@ -254,8 +257,8 @@ p{
 /* Character Sheet Section */
 
 .sectionPadding{
-padding-top: 50px;
-padding-bottom: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .charactersheet{
@@ -337,4 +340,28 @@ padding-bottom: 50px;
 
 .hidden{
   display: none;
+}
+
+/* Reponsiveness */
+
+@media screen and (max-width: 600px){
+
+  h1{
+    font-size: 35px;
+    line-height: 50px;
+  }
+
+  p{
+    font-size: 14px;
+  }
+
+  .hero{
+    background-size: cover;
+  }
+
+  .button{
+    width: 105px;
+    height: 85px;
+    font-size: 10px;
+  }
 }
