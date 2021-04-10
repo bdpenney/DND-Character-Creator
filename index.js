@@ -276,7 +276,7 @@ const dexRight = document.getElementById("dexRight");
 let dexValue = 8;
 
 dexLeft.addEventListener('click', () => {
-    if((dexValue > 8) && (strValue <= 13)){
+    if((dexValue > 8) && (dexValue <= 13)){
         dexValue --;
         document.getElementById("dexResult").innerHTML = dexValue;
         pointTotal ++;
