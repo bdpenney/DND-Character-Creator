@@ -55,14 +55,14 @@ body{
 }
 
 h1{
-  font-size: 50px;
+  font-size: 3.5vw;
   font-family: 'Crimson Text', serif;
-  line-height: 80px;
+  line-height: 5vw;
   padding-top: 30px;
 }
 
 h2{
-  font-size: 40px;
+  font-size: 3vw;
   font-family: 'Crimson Text', serif;
   margin: 0;
   padding-bottom: 20px;
@@ -70,12 +70,13 @@ h2{
 
 h3{
   text-align: center;
-  font-size: 26px;
+  font-size: 2.5vw;
   font-family: 'Crimson Text', serif;
   margin-bottom: 0;
 }
 
 h4{
+  font-size: 2.25vw;
   text-transform: uppercase;
   text-align: right;
   font-family: 'Crimson Text', serif;
@@ -83,9 +84,8 @@ h4{
 
 p{
   text-align: center;
-  font-size: 18px;
-  line-height: 30px;
-  font-family: 'Barlow', sans-serif;
+  font-size: 1.75vw;
+  font-family: 'Roboto', sans-serif;
 }
 
 /* Hero Section */
@@ -169,7 +169,7 @@ p{
   }
 
   .button{
-    font-size: 11px;
+    font-size: 1.15vw;
     font-weight: bold;
     color:white;
     border: none;
@@ -187,11 +187,11 @@ p{
     border: none;
    }
 
-.hoverEffect:hover{
+  .hoverEffect:hover{
     opacity: 1; 
   }
   
-.characterChoices{
+  .characterChoices{
   opacity: 50%;
   transition: 0.3s;
   }
@@ -223,7 +223,7 @@ p{
   /* Class Section */
 
   .classinfo{
-      font-size: 14px;
+      font-size: 1.25vw;
   }
 
   /* Race Section */
@@ -250,33 +250,33 @@ p{
     padding: 10px;
   }
   
-.alignabilitysheet{
+  .alignabilitysheet{
   width: 124.48px
-}
+  }
 
 /* Character Sheet Section */
 
-.sectionPadding{
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
+  .sectionPadding{
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 
-.charactersheet{
-  background-image: url('../img/asicon.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 100px;
-  height: 100px;
-}
+  .charactersheet{
+    background-image: url('../img/asicon.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+  }
 
-.editIcon{
-  position: relative;
-}
+  .editIcon{
+    position: relative;
+  }
 
 .characterName{
   background-color: black;
   color:cornsilk;
-  font-family: 'Barlow', sans-serif;
+  font-family: 'Roboto', sans-serif;
   text-align: center;
   font-size: 16px;
   width: 220px;
@@ -344,16 +344,19 @@ p{
 
 /* Reponsiveness */
 
+@media screen and (max-width: 992px){
+
+  .hero{
+    background-size: cover;
+  }
+
+  .button{
+    width: 120px;
+    height: 90px;
+  }
+}
+
 @media screen and (max-width: 600px){
-
-  h1{
-    font-size: 35px;
-    line-height: 50px;
-  }
-
-  p{
-    font-size: 14px;
-  }
 
   .hero{
     background-size: cover;
@@ -362,6 +365,5 @@ p{
   .button{
     width: 105px;
     height: 85px;
-    font-size: 10px;
   }
 }
