@@ -55,14 +55,15 @@ body{
 }
 
 h1{
-  font-size: 3.5vw;
+  font-size: 3vw;
   font-family: 'Crimson Text', serif;
   line-height: 5vw;
   padding-top: 30px;
+  padding-bottom: 25px;
 }
 
 h2{
-  font-size: 3vw;
+  font-size: 2.75vw;
   font-family: 'Crimson Text', serif;
   margin: 0;
   padding-bottom: 20px;
@@ -84,8 +85,14 @@ h4{
 
 p{
   text-align: center;
-  font-size: 1.75vw;
+  font-size: 1.4vw;
+  line-height: 25px;
   font-family: 'Roboto', sans-serif;
+}
+
+.paddingHero p{
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 /* Hero Section */
@@ -168,9 +175,8 @@ p{
     cursor: pointer;
   }
 
-  .button{
+  .buttonStyling{
     font-size: 1.15vw;
-    font-weight: bold;
     color:white;
     border: none;
     width: 150px;
@@ -234,10 +240,6 @@ p{
 
   .continueButtonSelected{
     opacity: 1;
-  }
-
-  #RaceCS{
-    padding-left: 10px;
   }
 
   /* Ability Scores Section */
@@ -350,7 +352,7 @@ p{
     background-size: cover;
   }
 
-  .button{
+  .buttonStyling{
     width: 120px;
     height: 90px;
   }
@@ -358,12 +360,119 @@ p{
 
 @media screen and (max-width: 600px){
 
+  /*Hero Section*/
+
   .hero{
     background-size: cover;
   }
 
-  .button{
-    width: 105px;
-    height: 85px;
+  h1{
+    padding-top: 200px;
+    line-height: 40px;
+    font-size: 7.5vw;
   }
+
+  h2{
+    font-size: 6.75vw;
+  }
+
+  p{
+    font-size: 4vw;
+  }
+
+  h3{
+    font-size: 4.75vw;
+  }
+
+  .classinfo{
+    font-size: 3.75vw;
+  }
+
+  .paddingHero p{
+    font-size: 4.25vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    line-height: 30px;
+  }
+
+  .buttonStyling{
+    width: 160px;
+    height: 130px;
+    font-size: 3.65vw;
+  }
+  
+  .logo p{
+    font-size: 3.75vw;
+  }
+
+  .logo img{
+    width: 10%;
+  }
+
+  #classSection .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #raceSection .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #classSection .optionBackground{
+    padding-bottom: 40px;
+  }
+
+  .roguePhoto{
+    width: 50%;
+  }
+
+  .fighterPhoto{
+    width: 50%;
+  }
+
+  .wizardPhoto{
+    width: 50%;
+  }
+
+  .bannerPhoto{
+    width: 50%;
+  }
+
+  .infoiconwrapper{
+    position: absolute;
+    top: -10px;
+    right: -15px;
+    cursor: pointer;
+  }
+
+  .infoiconwrapper1{
+    position: absolute;
+    top: -8px;
+    right: 40px;
+    cursor: pointer;
+  }
+
+  .infoiconwrapper2{
+    position: absolute;
+    top: -8px;
+    right: 55px;
+    cursor: pointer;
+  }
+
+  .infoiconwrapper3{
+    position: absolute;
+    top: 0px;
+    right: -35px;
+    cursor: pointer;
+  }
+  
 }

@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Dungeons and Dragons Character Creator</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Crimson+Text:wght@400;700&display=swap" rel="stylesheet">
@@ -11,13 +12,14 @@
 
     <body>
 
-        <nav id="navbarSection" class="hidden">
+        <nav id="navbarSection" class="hidden navBarMenu">
             <div class="flex">
-                <button id="homeButton" class="button">HOME</button>
-                <button id="classButton" class="button">CLASS</button>
-                <button id="raceButton" class="button">RACE</button>
-                <button id="abilitiesButton" class="button">ABILITIES</button>
-                <button id="charactersheetButton" class="button">CHARACTER SHEET</button>
+                <button id="homeButton" class="buttonStyling">HOME</button>
+                <button id="classButton" class="buttonStyling">CLASS</button>
+                <button id="raceButton" class="buttonStyling">RACE</button>
+                <button id="abilitiesButton" class="buttonStyling">ABILITIES</button>
+                <button id="charactersheetButton" class="buttonStyling">CHARACTER SHEET</button>
+                <i></i>
             </div>
         </nav>
 
@@ -26,13 +28,12 @@
                 <img src="img/dicelogo.png" width="5%">
                 <p class="fontheader">D&D Builder</p>
             </div>
-            <div class="container">
-                <h1 class="fontheader">DUNGEONS AND DRAGONS <br> CHARACTER CREATOR</h1>
-                <p>The Dungeons and Dragons Character Creator will 
-                    help <br> you create a starter character whether you are new to the <br>
+            <div class="container paddingHero">
+                <h1 class="fontheader">DUNGEONS & DRAGONS <br> CHARACTER CREATOR</h1>
+                <p>The Dungeons & Dragons Character Creator will help you create a character whether you are new to the
                     game or a veteran on the adventure lifestyle!</p>
                 <div class="flex">
-                    <button class="button" id="heroButton">VENTURE FORWARD</button>
+                    <button class="buttonStyling" id="heroButton">VENTURE<br>FORWARD</button>
                 </div>
             </div>
         </section> 
@@ -42,21 +43,21 @@
                 <div class="sectioninfowrapper">
                     <h2 class="fontheader flex">CLASS</h2>
                     <div>
-                        <img src="img/infoicon.png" class="infoiconwrapper" id="classPopup">
+                        <img src="img/infoicon1.png" class="infoiconwrapper" id="classPopup">
                         <span class="hidden popupStyling" id="classInfoPopup">Class shapes how you view the world and how you interact with it.</span>
                     </div>
                 </div>
             </div>
             <div class="container flex">
                 <div id="rogue">
-                    <button class="flex optionBackground classChoice characterChoices hoverEffect" id="rogueButton" type="button">
-                        <div class="classselection">
+                    <button class="flex optionBackground characterChoices hoverEffect" id="rogueButton" type="button">
+                        <div>
                             <div class="sectioninfowrapper">
                                 <h3>ROGUE</h3>
                                 <img src="img/infoicon1.png" class="infoiconwrapper2" id="roguePopup">
                                 <span class="hidden popupStyling" id="rogueInfoPopup">Rogues are real sneaky.</span>
                             </div>
-                            <img src="img/banner.png" width="100%">
+                            <img src="img/banner.png" width="100%" class="bannerPhoto">
                             <div class="sectioninfowrapper">
                                 <p>Primary Ability</p>
                                 <img src="img/infoicon1.png" class="infoiconwrapper1" id="roguePrimaryAbilityPopup">
@@ -64,18 +65,18 @@
                             </div>
                             <p class="classinfo">Dexterity</p>
                         </div>
-                        <img src="img/rogue.png" alt="rogue">
+                        <img src="img/rogue.png" alt="rogue" class="roguePhoto">
                     </button>
                 </div>
                 <div id="fighter">
-                    <button class="flex optionBackground classChoice characterChoices hoverEffect" id="fighterButton" type="button">
-                        <div class="classselection">
+                    <button class="flex optionBackground characterChoices hoverEffect" id="fighterButton" type="button">
+                        <div>
                             <div class="sectioninfowrapper">
                                 <h3>FIGHTER</h3>
                                 <img src="img/infoicon1.png" class="infoiconwrapper1" id="fighterPopup">
                                 <span class="hidden popupStyling" id="fighterInfoPopup">Fighters learn the basics of all combat styles.</span>
                             </div>
-                            <img src="img/banner.png" width="100%">
+                            <img src="img/banner.png" width="100%" class="bannerPhoto">
                             <div class="sectioninfowrapper">
                                 <p>Primary Ability</p>
                                 <img src="img/infoicon1.png" class="infoiconwrapper1" id="fighterPrimaryAbilityPopup">
@@ -83,18 +84,18 @@
                             </div>
                             <p class="classinfo">Strength</p>
                         </div>
-                        <img src="img/fighter.png">
+                        <img src="img/fighter.png" alt="fighter" class="fighterPhoto">
                     </button>
                 </div>
                 <div id="wizard">
-                    <button id="wizardButton" class="flex optionBackground classChoice characterChoices hoverEffect" type="button">
-                        <div class="classselection">
+                    <button id="wizardButton" class="flex optionBackground characterChoices hoverEffect" type="button">
+                        <div>
                             <div class="sectioninfowrapper">
                                 <h3>WIZARD</h3>
                                 <img src="img/infoicon1.png" class="infoiconwrapper1" id="wizardPopup">
                                 <span class="hidden popupStyling popupStyling2" id="wizardInfoPopup">Wizards are squishy.</span>
                             </div>
-                            <img src="img/banner.png" width="100%">
+                            <img src="img/banner.png" width="100%" class="bannerPhoto">
                             <div class="sectioninfowrapper">
                                 <p>Primary Ability</p>
                                 <img src="img/infoicon1.png" class="infoiconwrapper1" id="wizardPrimaryAbilityPopup">
@@ -102,13 +103,13 @@
                             </div>
                             <p class="classinfo">Intelligence</p>
                         </div>
-                        <img src="img/wizard2.png" id="wizard">
+                        <img src="img/wizard2.png" alt="wizard" class="wizardPhoto">
                     </button>
                 </div>
             </div>
             <div class="flex">
-                <button class="button" id="heroBack">BACK</button>
-                <button class="button continueButton" id="raceContinue">CONTINUE</button>
+                <button class="buttonStyling" id="heroBack">BACK</button>
+                <button class="buttonStyling continueButton" id="raceContinue">CONTINUE</button>
             </div>
         </section>
 
@@ -118,7 +119,7 @@
                 <div class="sectioninfowrapper">
                     <h2 class="fontheader flex">RACE</h2>
                     <div>
-                        <img src="img/infoicon.png" class="infoiconwrapper" id="racePopup">
+                        <img src="img/infoicon1.png" class="infoiconwrapper" id="racePopup">
                         <span class="hidden popupStyling" id="raceInfoPopup">Race is your lineage and genetics.</span>
                     </div>
                 </div>
@@ -132,7 +133,7 @@
                                 <img src="img/infoicon1.png" class="infoiconwrapper2" id="elfPopup">
                                 <span class="hidden popupStyling" id="elfInfoPopup">Elves are mystical.</span>
                             </div>
-                            <img src="img/banner.png" width="100%">
+                            <img src="img/banner.png" width="100%" class="bannerPhoto">
                             <div class="sectioninfowrapper">
                                 <p>Ability Score Bonus</p>
                                 <img src="img/infoicon1.png" class="infoiconwrapper1" id="elfBonusPopup">
@@ -151,7 +152,7 @@
                                 <img src="img/infoicon1.png" class="infoiconwrapper1" id="dwarfPopup">
                                 <span class="hidden popupStyling" id="dwarfInfoPopup">Dwarves are proud and hearty folk.</span>
                             </div>
-                            <img src="img/banner.png" width="100%">
+                            <img src="img/banner.png" width="100%" class="bannerPhoto">
                             <div class="sectioninfowrapper">
                                 <p>Ability Score Bonus</p>
                                 <img src="img/infoicon1.png" class="infoiconwrapper1" id="dwarfBonusPopup">
@@ -170,7 +171,7 @@
                                 <img src="img/infoicon1.png" class="infoiconwrapper1" id="gnomePopup"> 
                                 <span class="hidden popupStyling popupStyling2" id="gnomeInfoPopup">Gnomes are intuitive and crafty.</span>
                             </div>
-                            <img src="img/banner.png" width="100%">
+                            <img src="img/banner.png" width="100%" class="bannerPhoto">
                             <div class="sectioninfowrapper">
                                 <p>Ability Score Bonus</p>
                                 <img src="img/infoicon1.png" class="infoiconwrapper1" id="gnomeBonusPopup">
@@ -183,8 +184,8 @@
                 </div>
             </div>
             <div class="flex">
-                <button class="button" id="classBack">BACK</button>
-                <button class="button continueButton" id="abilitiesContinue">CONTINUE</button>
+                <button class="buttonStyling" id="classBack">BACK</button>
+                <button class="buttonStyling continueButton" id="abilitiesContinue">CONTINUE</button>
             </div>
         </section>
 
@@ -286,8 +287,8 @@
                     </div>
                 </div>
                 <div class="flex">
-                    <button class="button" id="raceBack">BACK</button>
-                    <button class="button continueButton" id="charactersheetContinue">CONTINUE</button>
+                    <button class="buttonStyling" id="raceBack">BACK</button>
+                    <button class="buttonStyling continueButton" id="charactersheetContinue">CONTINUE</button>
                 </div>
             </div>
         </section>
