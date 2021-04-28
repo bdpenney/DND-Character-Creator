@@ -14,12 +14,20 @@
 
         <nav id="navbarSection" class="hidden navBarMenu">
             <div class="flex">
-                <button id="homeButton" class="buttonStyling">HOME</button>
-                <button id="classButton" class="buttonStyling">CLASS</button>
-                <button id="raceButton" class="buttonStyling">RACE</button>
-                <button id="abilitiesButton" class="buttonStyling">ABILITIES</button>
-                <button id="charactersheetButton" class="buttonStyling">CHARACTER SHEET</button>
-                <i></i>
+                <div class="flex logo">
+                    <img src="img/dicelogo.png" width="5%">
+                    <p class="fontheader">D&D Builder</p>
+                </div>
+                <div class="dropDown">
+                    <button class="navBarDropDown"></button>
+                    <div class="dropDownOptions">
+                        <a id="homeButton">Home</a>
+                        <a id="classButton">Class</a>
+                        <a id="raceButton">Race</a>
+                        <a id="abilitiesButton">Abilities</a>
+                        <a id="charactersheetButton">Character Sheet</a>
+                    </div>
+                </div>
             </div>
         </nav>
 
@@ -40,29 +48,15 @@
 
         <section id="classSection" class="hidden sectionPadding">
             <div class="flexvertical">
-                <div class="sectioninfowrapper">
-                    <h2 class="fontheader flex">CLASS</h2>
-                    <div>
-                        <img src="img/infoicon1.png" class="infoiconwrapper" id="classPopup">
-                        <span class="hidden popupStyling" id="classInfoPopup">Class shapes how you view the world and how you interact with it.</span>
-                    </div>
-                </div>
+                <h2 class="fontheader flex">CLASS <sup><img src="img/infoicon1.png"></sup></h2>
             </div>
             <div class="container flex">
                 <div id="rogue">
                     <button class="flex optionBackground characterChoices hoverEffect" id="rogueButton" type="button">
                         <div>
-                            <div class="sectioninfowrapper">
-                                <h3>ROGUE</h3>
-                                <img src="img/infoicon1.png" class="infoiconwrapper2" id="roguePopup">
-                                <span class="hidden popupStyling" id="rogueInfoPopup">Rogues are real sneaky.</span>
-                            </div>
+                            <h3>ROGUE <sup><img src="img/infoicon1.png"></sup></h3>
                             <img src="img/banner.png" width="100%" class="bannerPhoto">
-                            <div class="sectioninfowrapper">
-                                <p>Primary Ability</p>
-                                <img src="img/infoicon1.png" class="infoiconwrapper1" id="roguePrimaryAbilityPopup">
-                                <span class="hidden popupStyling" id="roguePrimaryAbilityInfoPopup">You're naturally light on your feet.</span>
-                            </div>
+                            <p>Primary Ability <sup><img src="img/infoicon1.png"></sup></p>
                             <p class="classinfo">Dexterity</p>
                         </div>
                         <img src="img/rogue.png" alt="rogue" class="roguePhoto">
@@ -71,17 +65,9 @@
                 <div id="fighter">
                     <button class="flex optionBackground characterChoices hoverEffect" id="fighterButton" type="button">
                         <div>
-                            <div class="sectioninfowrapper">
-                                <h3>FIGHTER</h3>
-                                <img src="img/infoicon1.png" class="infoiconwrapper1" id="fighterPopup">
-                                <span class="hidden popupStyling" id="fighterInfoPopup">Fighters learn the basics of all combat styles.</span>
-                            </div>
+                            <h3>FIGHTER <sup><img src="img/infoicon1.png"></sup></h3>
                             <img src="img/banner.png" width="100%" class="bannerPhoto">
-                            <div class="sectioninfowrapper">
-                                <p>Primary Ability</p>
-                                <img src="img/infoicon1.png" class="infoiconwrapper1" id="fighterPrimaryAbilityPopup">
-                                <span class="hidden popupStyling" id="fighterPrimaryAbilityInfoPopup">You're skilled at combat so you are a heavy hitter.</span>
-                            </div>
+                            <p>Primary Ability <sup><img src="img/infoicon1.png"></sup></p>
                             <p class="classinfo">Strength</p>
                         </div>
                         <img src="img/fighter.png" alt="fighter" class="fighterPhoto">
@@ -90,17 +76,9 @@
                 <div id="wizard">
                     <button id="wizardButton" class="flex optionBackground characterChoices hoverEffect" type="button">
                         <div>
-                            <div class="sectioninfowrapper">
-                                <h3>WIZARD</h3>
-                                <img src="img/infoicon1.png" class="infoiconwrapper1" id="wizardPopup">
-                                <span class="hidden popupStyling popupStyling2" id="wizardInfoPopup">Wizards are squishy.</span>
-                            </div>
+                            <h3>WIZARD <sup><img src="img/infoicon1.png"></sup></h3>
                             <img src="img/banner.png" width="100%" class="bannerPhoto">
-                            <div class="sectioninfowrapper">
-                                <p>Primary Ability</p>
-                                <img src="img/infoicon1.png" class="infoiconwrapper1" id="wizardPrimaryAbilityPopup">
-                                <span class="hidden popupStyling popupStyling2" id="wizardPrimaryAbilityInfoPopup">You are knowledgeable.</span>
-                            </div>
+                            <p>Primary Ability <sup><img src="img/infoicon1.png"></sup></p>
                             <p class="classinfo">Intelligence</p>
                         </div>
                         <img src="img/wizard2.png" alt="wizard" class="wizardPhoto">
@@ -116,29 +94,15 @@
 
         <section id="raceSection" class="hidden sectionPadding">
             <div class="flexvertical">
-                <div class="sectioninfowrapper">
-                    <h2 class="fontheader flex">RACE</h2>
-                    <div>
-                        <img src="img/infoicon1.png" class="infoiconwrapper" id="racePopup">
-                        <span class="hidden popupStyling" id="raceInfoPopup">Race is your lineage and genetics.</span>
-                    </div>
-                </div>
+                <h2 class="fontheader flex">RACE <sup><img src="img/infoicon1.png"></sup></h2>
             </div>
             <div class="container flex">
                 <div id="elf">
                     <button id="elfButton" class="flex optionBackground raceChoice characterChoices hoverEffect" type="button">
                         <div>
-                            <div class="sectioninfowrapper">
-                                <h3>ELF</h3>
-                                <img src="img/infoicon1.png" class="infoiconwrapper2" id="elfPopup">
-                                <span class="hidden popupStyling" id="elfInfoPopup">Elves are mystical.</span>
-                            </div>
+                            <h3>ELF <sup><img src="img/infoicon1.png"></sup></h3>
                             <img src="img/banner.png" width="100%" class="bannerPhoto">
-                            <div class="sectioninfowrapper">
-                                <p>Ability Score Bonus</p>
-                                <img src="img/infoicon1.png" class="infoiconwrapper1" id="elfBonusPopup">
-                                <span class="hidden popupStyling" id="elfBonusInfoPopup">Elves are very agile so they gain a natural increase to dexterity skills.</span>
-                            </div>
+                            <p>Ability Score Bonus <sup><img src="img/infoicon1.png"></sup></p>
                             <p class="classinfo">+2 Dexterity</p>
                         </div>
                         <img src="img/elff.png" id="elf">
@@ -147,17 +111,9 @@
                 <div id="dwarf">
                     <button id="dwarfButton" class="flex optionBackground raceChoice characterChoices hoverEffect" type="button">
                         <div>
-                            <div class="sectioninfowrapper">
-                                <h3>DWARF</h3>
-                                <img src="img/infoicon1.png" class="infoiconwrapper1" id="dwarfPopup">
-                                <span class="hidden popupStyling" id="dwarfInfoPopup">Dwarves are proud and hearty folk.</span>
-                            </div>
+                            <h3>DWARF <sup><img src="img/infoicon1.png"></sup></h3>
                             <img src="img/banner.png" width="100%" class="bannerPhoto">
-                            <div class="sectioninfowrapper">
-                                <p>Ability Score Bonus</p>
-                                <img src="img/infoicon1.png" class="infoiconwrapper1" id="dwarfBonusPopup">
-                                <span class="hidden popupStyling" id="dwarfBonusInfoPopup">Dwarves are stout and tough.</span>
-                            </div>
+                            <p>Ability Score Bonus <sup><img src="img/infoicon1.png"></sup></p>
                             <p class="classinfo">+2 Constitution</p>
                         </div>
                         <img src="img/dwarf.png" id="dwarf">
@@ -166,17 +122,9 @@
                 <div id="gnome">
                     <button id="gnomeButton" class="flex optionBackground raceChoice characterChoices hoverEffect" type="button">
                         <div>
-                            <div class="sectioninfowrapper">
-                                <h3>GNOME</h3>
-                                <img src="img/infoicon1.png" class="infoiconwrapper1" id="gnomePopup"> 
-                                <span class="hidden popupStyling popupStyling2" id="gnomeInfoPopup">Gnomes are intuitive and crafty.</span>
-                            </div>
+                            <h3>GNOME <sup><img src="img/infoicon1.png"></sup></h3>
                             <img src="img/banner.png" width="100%" class="bannerPhoto">
-                            <div class="sectioninfowrapper">
-                                <p>Ability Score Bonus</p>
-                                <img src="img/infoicon1.png" class="infoiconwrapper1" id="gnomeBonusPopup">
-                                <span class="hidden popupStyling popupStyling2" id="gnomeBonusInfoPopup">Gnomes are very keen so they can learn faster and pick up on the little things.</span>
-                            </div>
+                            <p>Ability Score Bonus <sup><img src="img/infoicon1.png"></sup></p>
                             <p class="classinfo">+2 Intelligence</p>
                         </div>
                         <img src="img/gnome.png" id="gnome">
@@ -191,30 +139,20 @@
 
         <section id="abilitiesSection" class="hidden sectionPadding">
             <div class="flexvertical">
-                <div class="sectioninfowrapper">
-                    <h2 class="fontheader flex">ABILITIES</h2>
-                    <img src="img/infoicon.png" class="infoiconwrapper" id="abilitiesPopup">
-                    <span class="hidden popupStyling popupStyling1" id="abilitiesInfoPopup">Abilities are your physical and mental characteristics.</span>
-                </div>
+                    <h2 class="fontheader flex">ABILITIES <sup><img src="img/infoicon1.png"></sup></h2>
             </div>
             <div class="container flexvertical">
-                <div class="sectioninfowrapper">
-                    <p>POINTS REMAINING</p>
-                    <img src="img/infoicon.png" class="infoiconwrapper1" id="pointsPopup">
-                    <span class="hidden popupStyling" id="pointsInfoPopup">How many points you have to distribute amongst all attributes. Going from 9-13 costs 1 point and from 13>14 and 14>15 costs 2 points.</span>
-                </div>
-                <img src="img/banner.png" width="200px">
+                    <p>POINTS REMAINING <sup><img src="img/infoicon1.png"></sup></p>
+                <img src="img/banner.png" width="200px" class="abilityBanner">
                 <div class="flex">
                     <p id="pointsCounter">27</p>
                     <p>/27</p>
                 </div>
-                <div class="flex">
+                <div class="flex flex4">
                     <div class="flexvertical abilitypadding">
                         <div class="flexbetween">
-                            <div class="sectioninfowrapper alignabilitysheet">
-                                <h4>Strength</h4>
-                                <img src="img/infoicon1.png" class="infoiconwrapper3" id="abilitiesStrPopup">
-                                <span class="hidden popupStyling" id="abilitiesStrInfoPopup">How strong you are.</span>
+                            <div class="alignabilitysheet">
+                                <h4>Strength <sup><img src="img/infoicon1.png"></sup></h4>
                             </div>
                             <div class="flex">
                                 <button id="strLeft" class="abilitiesLeft"></button>                            
@@ -223,10 +161,8 @@
                             </div>
                         </div>
                         <div class="flexbetween">
-                            <div class="sectioninfowrapper alignabilitysheet">
-                                <h4>Dexterity</h4>
-                                <img src="img/infoicon1.png" class="infoiconwrapper3" id="abilitiesDexPopup">
-                                <span class="hidden popupStyling" id="abilitiesDexInfoPopup">How agile you are.</span>
+                            <div class="alignabilitysheet">
+                                <h4>Dexterity <sup><img src="img/infoicon1.png"></sup></h4>
                             </div>
                             <div class="flex">
                                 <button id="dexLeft" class="abilitiesLeft"></button>  
@@ -235,10 +171,8 @@
                             </div>
                         </div>
                         <div class="flexbetween">
-                            <div class="sectioninfowrapper">
-                                <h4>Constitution</h4>
-                                <img src="img/infoicon1.png" class="infoiconwrapper3" id="abilitiesConPopup">
-                                <span class="hidden popupStyling" id="abilitiesConInfoPopup">How hearty and healthy you are.</span>
+                            <div class="alignabilitysheet">
+                                <h4>Constitution <sup><img src="img/infoicon1.png"></sup></h4>
                             </div>
                             <div class="flex">
                                 <button id="conLeft" class="abilitiesLeft"></button>
@@ -247,12 +181,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="flexvertical">
+                    <div class="flexvertical abilitypadding">
                         <div class="flexbetween">
-                            <div class="sectioninfowrapper alignabilitysheet">
-                                <h4>Intelligence</h4>
-                                <img src="img/infoicon1.png" class="infoiconwrapper3" id="abilitiesIntPopup">
-                                <span class="hidden popupStyling" id="abilitiesIntInfoPopup">Your knowledge of wordly events and attention to detail.</span>
+                            <div class="alignabilitysheet">
+                                <h4>Intelligence <sup><img src="img/infoicon1.png"></sup></h4>
                             </div>
                             <div class="flex">
                                 <button id="intLeft" class="abilitiesLeft"></button>
@@ -261,10 +193,8 @@
                             </div>
                         </div>
                         <div class="flexbetween">
-                            <div class="sectioninfowrapper alignabilitysheet">
-                                <h4>Wisdom</h4>
-                                <img src="img/infoicon1.png" class="infoiconwrapper3" id="abilitiesWisPopup">
-                                <span class="hidden popupStyling" id="abilitiesWisInfoPopup">Street smarts!</span>
+                            <div class="alignabilitysheet">
+                                <h4>Wisdom <sup><img src="img/infoicon1.png"></sup></h4>
                             </div>
                             <div class="flex">
                                 <button id="wisLeft" class="abilitiesLeft"></button>
@@ -273,10 +203,8 @@
                             </div>
                         </div>
                         <div class="flexbetween">
-                            <div class="sectioninfowrapper alignabilitysheet">
-                                <h4>Charisma</h4>
-                                <img src="img/infoicon1.png" class="infoiconwrapper3" id="abilitiesChaPopup">
-                                <span class="hidden popupStyling" id="abilitiesChaInfoPopup">Your communication skills and ability to win others over.</span>
+                            <div class="alignabilitysheet">
+                                <h4>Charisma <sup><img src="img/infoicon1.png"></sup></h4>
                             </div>
                             <div class="flex">
                                 <button id="chaLeft" class="abilitiesLeft"></button>
