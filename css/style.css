@@ -26,6 +26,12 @@ body{
   padding-bottom: 50px;
 }
 
+.flex3{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .flexvertical{
   display: flex;
   justify-content: center;
@@ -372,6 +378,7 @@ sup{
   background-color: inherit;
   font-family: inherit;
   margin: 0;
+  margin-right: 100px;
 }
 
 .navBarMenu a:hover, .dropDown:hover .navBarDropDown {
@@ -471,6 +478,7 @@ sup{
     font-size: 3.65vw;
   }
   
+  
   .logo p{
     font-size: 3.75vw;
   }
@@ -550,5 +558,45 @@ sup{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .lefttopcorner{
+    visibility: hidden;
+  }
+
+  .righttopcorner{
+    visibility: hidden;
+    left: 0px;
+  }
+  
+  .leftbottomcorner{
+    visibility: hidden;
+    top: 0px;
+  }
+  
+  .rightbottomcorner{
+    visibility: hidden;
+    top: 0px;
+    left: 0px;
+  }
+
+  .flexbetween1{
+    width: 250px;
+  }
+
+  .characterName{
+    width: 150px;
+  }
+
+  .dropDown .navBarDropDown{
+    margin-right: 275px;
+  }
+
+  .navBarMenu a{
+    font-size: 3vw;
+  }
+
+  .dropDownOptions{
+    min-width: 100px;
   }
 }
