@@ -116,6 +116,7 @@ p{
   align-items:flex-start;
   justify-content: flex-start;
   padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 h2 sup{
@@ -366,6 +367,7 @@ sup{
 .dropDown {
   float: left;
   overflow: hidden;
+  padding-top: 20px;
   padding-bottom: 20px;
 }
 
